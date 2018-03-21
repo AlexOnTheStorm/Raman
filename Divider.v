@@ -1,7 +1,7 @@
 `timescale 1 ns / 10 ps
 //Усреднение 100000 измерений
 module Divider
-    #(parameter N = 65)
+    #(parameter N = 64)
     (
     input       wire                    clk,
     input       wire                    start,
@@ -30,7 +30,7 @@ assign ready = cnt == 0;
 always@(posedge clk)
 if(start)
 begin
-    cnt <= 7'd65;
+    cnt <= 7'd64;
     r_quotient <= {N{1'b0}};
     divident_copy <= {{N{1'b0}}, divident};
     divider_copy <= {1'b0, divider, {N-1{1'b0}}};
@@ -39,14 +39,14 @@ else if (!ready)
 begin
     cnt <= cnt - 1'b1;
     divider_copy <= divider_copy >> 1;
-    if(!w_diff[129])
+    if(!w_diff[127])
     begin
         divident_copy <= w_diff;
-        r_quotient <= {quotient[63:0], 1'b1};
+        r_quotient <= {quotient[62:0], 1'b1};
     end
     else
     begin
-        r_quotient <= {quotient[63:0], 1'b0};
+        r_quotient <= {quotient[62:0], 1'b0};
     end
 end
 

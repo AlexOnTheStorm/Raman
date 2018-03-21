@@ -1,0 +1,15 @@
+# Compile of FIFORam.v was successful.
+# Compile of tbFIFORam.v was successful.
+# Compile of Action.v was successful.
+# Compile of Raman.v was successful.
+# Compile of Accumulation.v was successful.
+# Compile of Storage.v was successful.
+# Compile of Divider.v was successful.
+# Compile of Pool.v was successful.
+# Compile of Switch.v was successful.
+# Compile of Divider2.v was successful.
+# Compile of Ratio.v was successful.
+# 11 compiles, 0 failed with no errors. 
+restart -f
+# No Design Loaded!
+vsim +altera -do Raman_run_msim_rtl_verilog.do -l msim_transcript -gui work.tbRam

@@ -3,27 +3,90 @@ K3
 13
 cModel Technology
 Z0 dD:\Quartus\Raman\simulation\modelsim
-vAction
-!i10b 1
-!s100 _`Xfn>abGL:Jji:?a]h`63
-IiDWlIVEH`AblNZ^o8]7CL2
-V[:QcK_CWAAWAj2[j1234Y1
+vAccumulation
+I3QF_?0LKgG17^>:QnRg0m1
+Vad>AebaKJTXMTOnK[VUj01
 Z1 dD:\Quartus\Raman\simulation\modelsim
-w1521238930
-8D:/Quartus/Raman/Action.v
-FD:/Quartus/Raman/Action.v
+w1521599134
+8D:/Quartus/Raman/Accumulation.v
+FD:/Quartus/Raman/Accumulation.v
 L0 3
 Z2 OV;L;10.1d;51
 r1
-!s85 0
 31
-!s108 1521239852.621000
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/Quartus/Raman -O0
+n@accumulation
+!i10b 1
+!s100 70NHRdCe=QEoYYRXkS5@:3
+!s85 0
+!s108 1521627824.728000
+!s107 D:/Quartus/Raman/Accumulation.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/Raman|D:/Quartus/Raman/Accumulation.v|
+!s101 -O0
+vAction
+IVe]o=NCl`Yk_e_FdzD1ga0
+Vn>O023mkbOf3WU^MDZ?oM2
+R1
+w1521570719
+8D:/Quartus/Raman/Action.v
+FD:/Quartus/Raman/Action.v
+L0 3
+R2
+r1
+31
+R3
+R4
+n@action
+!i10b 1
+!s100 ijfamF@UnB>R2n=4OLcjR3
+!s85 0
+!s108 1521627824.548000
 !s107 D:/Quartus/Raman/Action.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/Raman|D:/Quartus/Raman/Action.v|
 !s101 -O0
-Z3 o-vlog01compat -work work -O0
-Z4 !s92 -vlog01compat -work work +incdir+D:/Quartus/Raman -O0
-n@action
+vDivider
+I?_=<U6<2f:1Hc28`gZC?C2
+VD<K8MKHcWozT@VK_:I^>c2
+R1
+w1521627640
+8D:/Quartus/Raman/Divider.v
+FD:/Quartus/Raman/Divider.v
+L0 3
+R2
+r1
+31
+R3
+R4
+n@divider
+!i10b 1
+!s100 ?6V[l;0k=6cVQ615^j4`D3
+!s85 0
+!s108 1521627825.042000
+!s107 D:/Quartus/Raman/Divider.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/Raman|D:/Quartus/Raman/Divider.v|
+!s101 -O0
+vDivider2
+!i10b 1
+!s100 co7@4^nZemm91[LCm]KD:0
+ICQWgd;<KL>F]aYK^VHA@83
+VIbi;m]3UD:E7h9gPUSVF83
+R1
+w1521594503
+8D:/Quartus/Raman/Divider2.v
+FD:/Quartus/Raman/Divider2.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1521627825.715000
+!s107 D:/Quartus/Raman/Divider2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/Raman|D:/Quartus/Raman/Divider2.v|
+!s101 -O0
+R3
+R4
+n@divider2
 vFIFORam
 IGEc0ES`<EFd5QN:3VkU900
 V5]o3:UWgmTPgD0c8]@6W21
@@ -41,15 +104,36 @@ R4
 !i10b 1
 !s100 kD0:G_fgbkFRSPaLGbjn]2
 !s85 0
-!s108 1521239852.184000
+!s108 1521627824.210000
 !s107 D:/Quartus/Raman/FIFORam.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/Raman|D:/Quartus/Raman/FIFORam.v|
 !s101 -O0
-vRaman
-IE^3NL`^>01:zj7b]WNEaf1
-V>nMX_dQK>>:hDEki<d4DF2
+vPool
+IR;4FZNg1c0T34U[G@]KTY0
+V`ERj`G3KSdJKAUZ0U1XJQ2
 R1
-w1521239513
+w1521627639
+8D:/Quartus/Raman/Pool.v
+FD:/Quartus/Raman/Pool.v
+L0 3
+R2
+r1
+31
+R3
+R4
+n@pool
+!i10b 1
+!s100 [f[h=gAQ0QVQ=AUifjCTV3
+!s85 0
+!s108 1521627825.194000
+!s107 D:/Quartus/Raman/Pool.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/Raman|D:/Quartus/Raman/Pool.v|
+!s101 -O0
+vRaman
+I4_jkKI^GFzWa7_zE764^O3
+V`8Cf3djCD4VMFU^h>;UQT3
+R1
+w1521595865
 8D:/Quartus/Raman/Raman.v
 FD:/Quartus/Raman/Raman.v
 L0 3
@@ -60,9 +144,72 @@ R3
 R4
 n@raman
 !i10b 1
-!s100 f]DNd;kQiC4`[ISCUigBc2
+!s100 YBLKc1I_]cL<h3E[BXBKg3
 !s85 0
-!s108 1521239852.435000
+!s108 1521627824.388000
 !s107 D:/Quartus/Raman/Raman.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/Raman|D:/Quartus/Raman/Raman.v|
+!s101 -O0
+vRatio
+I?YL;P>XaSSjkb9VS[MQHa2
+V;[h1F_0ml]jOXA3<12W570
+R1
+w1521598820
+8D:/Quartus/Raman/Ratio.v
+FD:/Quartus/Raman/Ratio.v
+L0 3
+R2
+r1
+31
+R3
+R4
+n@ratio
+!i10b 1
+!s100 ^811HS4`n9o_V_FV`Y0EI0
+!s85 0
+!s108 1521627825.563000
+!s107 D:/Quartus/Raman/Ratio.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/Raman|D:/Quartus/Raman/Ratio.v|
+!s101 -O0
+vStorage
+IN@N`eFjU<G^U_Yo2=Ln6N3
+VR_X051k<XgO8ON2mnm<fo3
+R1
+w1521588407
+8D:/Quartus/Raman/Storage.v
+FD:/Quartus/Raman/Storage.v
+L0 3
+R2
+r1
+31
+R3
+R4
+n@storage
+!i10b 1
+!s100 E?1J6QnafDA?[k?WenQTW3
+!s85 0
+!s108 1521627824.877000
+!s107 D:/Quartus/Raman/Storage.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/Raman|D:/Quartus/Raman/Storage.v|
+!s101 -O0
+vSwitch
+IV;IKX>bYSOIJRf^M2;jFj0
+V0iV1fb[9@iPm^7@IEoHFQ2
+R1
+w1521580701
+8D:/Quartus/Raman/Switch.v
+FD:/Quartus/Raman/Switch.v
+L0 3
+R2
+r1
+31
+R3
+R4
+n@switch
+!i10b 1
+!s100 9NdNEPNDjB?e7oVKM:EGC0
+!s85 0
+!s108 1521627825.393000
+!s107 D:/Quartus/Raman/Switch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus/Raman|D:/Quartus/Raman/Switch.v|
 !s101 -O0

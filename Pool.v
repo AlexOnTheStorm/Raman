@@ -84,8 +84,8 @@ end
 Divider Div1 (
 				.clk(clk),
 				.start(start),
-				.divident({{29{1'b0}}, {stokes [29*(cnt_div+1)-1 -: 29], 7'b0} }),
-				.divider({{36{1'b0}}, antistokes [29*(cnt_div+1)-1 -: 29] }),
+				.divident({{29{1'b0}}, {stokes [29*(cnt_div+1)-1 -: 29], 6'b0} }),
+				.divider({{35{1'b0}}, antistokes [29*(cnt_div+1)-1 -: 29] }),
 				.quotient(quotient),
 				.ready(ready));
 

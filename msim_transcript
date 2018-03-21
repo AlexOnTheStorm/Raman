@@ -1,0 +1,18 @@
+# vsim +altera -do Raman_run_msim_rtl_verilog.do -l msim_transcript -gui work.tbRam 
+# Loading work.tbRam
+# Loading work.Raman
+# Loading work.Action
+# Loading work.FIFORam
+# ** Error: (vsim-3033) D:/Quartus/Raman/FIFORam.v(83): Instantiation of 'scfifo' failed. The design unit was not found.
+# 
+#         Region: /tbRam/uut/Ram
+#         Searched libraries:
+#             D:/Quartus/Raman/work
+# Loading work.Accumulation
+# Loading work.Pool
+# Loading work.Divider
+# Loading work.Storage
+# Loading work.Ratio
+# Loading work.Divider2
+# Loading work.Switch
+# Error loading design
