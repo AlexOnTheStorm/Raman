@@ -1,0 +1,44 @@
+`timescale 1 ns / 10 ps
+//Главный модуль, запускающий другие модули
+module Raman (
+	clock,
+	data,
+	rdreq,
+	wrreq,
+	q,
+	cnt_point,
+	cnt_measure,
+	enable);
+
+	input	  clock;
+	input	[11:0]  data;
+	input enable;
+	output	  rdreq;
+	output	  wrreq;
+	output	[11:0]  q;
+	output [10:0] cnt_point;
+	output [16:0] cnt_measure;
+
+	Action FirstAction (
+				.enable(enable),
+				.wrreq(wrreq),
+				.rdreq(rdreq),
+				.clk(clock),
+				.cnt_point(cnt_point),
+				.cnt_measure(cnt_measure));
+
+	FIFORam	Ram (
+				.clock (clock),
+				.sclr (sclr),
+				.wrreq (wrreq),
+				.aclr (aclr),
+				.data (data),
+				.rdreq (rdreq),
+				.usedw (sub_wire0),
+				.empty (sub_wire1),
+				.full (sub_wire2),
+				.q (sub_wire3),
+				.almost_empty (),
+				.almost_full ());
+
+endmodule

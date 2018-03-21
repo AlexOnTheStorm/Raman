@@ -1,0 +1,18 @@
+`timescale 1 ns / 10 ps
+//Накопление 100000 значений
+module Storage (
+clk,
+rdreq,
+q,
+cnt_point,
+cnt_measure,
+sum);
+
+parameter POINTS;
+parameter MEASURES;
+
+
+
+
+
+endmodule

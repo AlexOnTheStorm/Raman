@@ -1,0 +1,9 @@
+`timescale 1 ns / 10 ps
+//Хранилище для делителя
+module Pool (
+clk,
+cnt_measure,
+cnt_point,
+cnt_save,
+sum,
+store);

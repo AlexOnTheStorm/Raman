@@ -1,0 +1,26 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Quartus\Raman\simulation\modelsim
+vRaman
+!i10b 1
+!s100 SIm_QJ54VzfA<_K[Eg?2[3
+IdTQ0_nM?:mTm7V7lbSSV^1
+V0<=>H7RaI@e?m^z@WeHGe2
+Z1 dD:\Quartus\Raman\simulation\modelsim
+w1521126705
+8Raman_6_1200mv_85c_slow.vo
+FRaman_6_1200mv_85c_slow.vo
+L0 31
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1521127544.062000
+!s107 Raman_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Raman_6_1200mv_85c_slow.vo|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+n@raman

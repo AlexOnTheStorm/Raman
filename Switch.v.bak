@@ -1,0 +1,19 @@
+`timescale 1 ns / 10 ps
+//Управление switch
+module Switch (
+clk,
+cnt_measure,
+cnt_point,
+cnt_save,
+store,
+storage);
+
+parameter POINTS;
+parameter MEASURES;
+
+input clk;
+input [12*POINTS-1:0] store; //Хранит результаты деления с POINTS точек
+input [16:0] cnt_measure;
+input [10:0] cnt_point;
+input [3:0] cnt_save;
+output [12*POINTS*10-1:0] storage;

@@ -1,0 +1,7 @@
+`timescale 1 ns / 10 ps
+
+module Action (
+enable,
+wrreq,
+rdreq,
+clk,

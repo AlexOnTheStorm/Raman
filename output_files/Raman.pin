@@ -1,0 +1,326 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		2.5V
+ --					Bank 2:		2.5V
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:		2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+CHIP  "Raman"  ASSIGNED TO AN: EP4CE22F17C6
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
+sum2[0]                      : A2        : output : 2.5 V             :         : 8         : N              
+cnt_ratio[4]                 : A3        : output : 2.5 V             :         : 8         : N              
+sum3[10]                     : A4        : output : 2.5 V             :         : 8         : N              
+sum2[2]                      : A5        : output : 2.5 V             :         : 8         : N              
+sum6[3]                      : A6        : output : 2.5 V             :         : 8         : N              
+sum1[4]                      : A7        : output : 2.5 V             :         : 8         : N              
+GND+                         : A8        :        :                   :         : 8         :                
+data[9]                      : A9        : input  : 2.5 V             :         : 7         : N              
+sum1[1]                      : A10       : output : 2.5 V             :         : 7         : N              
+q[6]                         : A11       : output : 2.5 V             :         : 7         : N              
+sum6[11]                     : A12       : output : 2.5 V             :         : 7         : N              
+sum1[3]                      : A13       : output : 2.5 V             :         : 7         : N              
+sum6[1]                      : A14       : output : 2.5 V             :         : 7         : N              
+sum1[6]                      : A15       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
+cnt_ratio[1]                 : B1        : output : 2.5 V             :         : 1         : N              
+GND                          : B2        : gnd    :                   :         :           :                
+cnt_measure[13]              : B3        : output : 2.5 V             :         : 8         : N              
+cnt_ratio[6]                 : B4        : output : 2.5 V             :         : 8         : N              
+sum5[10]                     : B5        : output : 2.5 V             :         : 8         : N              
+sum6[7]                      : B6        : output : 2.5 V             :         : 8         : N              
+sum3[11]                     : B7        : output : 2.5 V             :         : 8         : N              
+GND+                         : B8        :        :                   :         : 8         :                
+data[10]                     : B9        : input  : 2.5 V             :         : 7         : N              
+sum5[0]                      : B10       : output : 2.5 V             :         : 7         : N              
+data[11]                     : B11       : input  : 2.5 V             :         : 7         : N              
+sum1[0]                      : B12       : output : 2.5 V             :         : 7         : N              
+sum2[1]                      : B13       : output : 2.5 V             :         : 7         : N              
+sum1[9]                      : B14       : output : 2.5 V             :         : 7         : N              
+GND                          : B15       : gnd    :                   :         :           :                
+sum3[9]                      : B16       : output : 2.5 V             :         : 6         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
+cnt_ratio[2]                 : C2        : output : 2.5 V             :         : 1         : N              
+sum5[2]                      : C3        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
+GND                          : C5        : gnd    :                   :         :           :                
+sum2[5]                      : C6        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
+sum2[11]                     : C8        : output : 2.5 V             :         : 8         : N              
+sum3[1]                      : C9        : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
+sum1[2]                      : C11       : output : 2.5 V             :         : 7         : N              
+GND                          : C12       : gnd    :                   :         :           :                
+VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
+ready_ratio                  : C14       : output : 2.5 V             :         : 7         : N              
+sum5[1]                      : C15       : output : 2.5 V             :         : 6         : N              
+sum3[5]                      : C16       : output : 2.5 V             :         : 6         : N              
+cnt_ratio[0]                 : D1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
+sum5[6]                      : D3        : output : 2.5 V             :         : 8         : N              
+VCCD_PLL3                    : D4        : power  :                   : 1.2V    :           :                
+cnt_ratio[5]                 : D5        : output : 2.5 V             :         : 8         : N              
+sum5[7]                      : D6        : output : 2.5 V             :         : 8         : N              
+GND                          : D7        : gnd    :                   :         :           :                
+sum2[10]                     : D8        : output : 2.5 V             :         : 8         : N              
+sum1[8]                      : D9        : output : 2.5 V             :         : 7         : N              
+GND                          : D10       : gnd    :                   :         :           :                
+sum1[5]                      : D11       : output : 2.5 V             :         : 7         : N              
+sum1[7]                      : D12       : output : 2.5 V             :         : 7         : N              
+VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
+sum2[3]                      : D14       : output : 2.5 V             :         : 7         : N              
+cnt_point[10]                : D15       : output : 2.5 V             :         : 6         : N              
+cnt_point[8]                 : D16       : output : 2.5 V             :         : 6         : N              
+clock                        : E1        : input  : 2.5 V             :         : 1         : N              
+GND                          : E2        : gnd    :                   :         :           :                
+VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
+GND                          : E4        : gnd    :                   :         :           :                
+GNDA3                        : E5        : gnd    :                   :         :           :                
+sum2[6]                      : E6        : output : 2.5 V             :         : 8         : N              
+sum6[10]                     : E7        : output : 2.5 V             :         : 8         : N              
+sum2[4]                      : E8        : output : 2.5 V             :         : 8         : N              
+sum1[11]                     : E9        : output : 2.5 V             :         : 7         : N              
+sum2[9]                      : E10       : output : 2.5 V             :         : 7         : N              
+sum2[8]                      : E11       : output : 2.5 V             :         : 7         : N              
+GNDA2                        : E12       : gnd    :                   :         :           :                
+GND                          : E13       : gnd    :                   :         :           :                
+VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
+data[8]                      : E15       : input  : 2.5 V             :         : 6         : N              
+data[7]                      : E16       : input  : 2.5 V             :         : 6         : N              
+sum3[7]                      : F1        : output : 2.5 V             :         : 1         : N              
+cnt_ratio[3]                 : F2        : output : 2.5 V             :         : 1         : N              
+sum6[6]                      : F3        : output : 2.5 V             :         : 1         : N              
+nSTATUS                      : F4        :        :                   :         : 1         :                
+VCCA3                        : F5        : power  :                   : 2.5V    :           :                
+GND                          : F6        : gnd    :                   :         :           :                
+VCCINT                       : F7        : power  :                   : 1.2V    :           :                
+sum2[7]                      : F8        : output : 2.5 V             :         : 8         : N              
+sum1[10]                     : F9        : output : 2.5 V             :         : 7         : N              
+GND                          : F10       : gnd    :                   :         :           :                
+VCCINT                       : F11       : power  :                   : 1.2V    :           :                
+VCCA2                        : F12       : power  :                   : 2.5V    :           :                
+q[5]                         : F13       : output : 2.5 V             :         : 6         : N              
+q[7]                         : F14       : output : 2.5 V             :         : 6         : N              
+sum5[9]                      : F15       : output : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 2.5 V             :         : 6         : N              
+sum5[5]                      : G1        : output : 2.5 V             :         : 1         : N              
+sum6[2]                      : G2        : output : 2.5 V             :         : 1         : N              
+VCCIO1                       : G3        : power  :                   : 2.5V    : 1         :                
+GND                          : G4        : gnd    :                   :         :           :                
+cnt_ratio[7]                 : G5        : output : 2.5 V             :         : 1         : N              
+VCCINT                       : G6        : power  :                   : 1.2V    :           :                
+VCCINT                       : G7        : power  :                   : 1.2V    :           :                
+VCCINT                       : G8        : power  :                   : 1.2V    :           :                
+VCCINT                       : G9        : power  :                   : 1.2V    :           :                
+VCCINT                       : G10       : power  :                   : 1.2V    :           :                
+GND                          : G11       : gnd    :                   :         :           :                
+MSEL2                        : G12       :        :                   :         : 6         :                
+GND                          : G13       : gnd    :                   :         :           :                
+VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
+sum6[9]                      : G15       : output : 2.5 V             :         : 6         : N              
+q[1]                         : G16       : output : 2.5 V             :         : 6         : N              
+~ALTERA_DCLK~                : H1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H2        : input  : 2.5 V             :         : 1         : N              
+TCK                          : H3        : input  :                   :         : 1         :                
+TDI                          : H4        : input  :                   :         : 1         :                
+nCONFIG                      : H5        :        :                   :         : 1         :                
+VCCINT                       : H6        : power  :                   : 1.2V    :           :                
+GND                          : H7        : gnd    :                   :         :           :                
+GND                          : H8        : gnd    :                   :         :           :                
+GND                          : H9        : gnd    :                   :         :           :                
+GND                          : H10       : gnd    :                   :         :           :                
+VCCINT                       : H11       : power  :                   : 1.2V    :           :                
+MSEL1                        : H12       :        :                   :         : 6         :                
+MSEL0                        : H13       :        :                   :         : 6         :                
+CONF_DONE                    : H14       :        :                   :         : 6         :                
+GND                          : H15       : gnd    :                   :         :           :                
+GND                          : H16       : gnd    :                   :         :           :                
+cnt_ratio[9]                 : J1        : output : 2.5 V             :         : 2         : N              
+cnt_measure[3]               : J2        : output : 2.5 V             :         : 2         : N              
+nCE                          : J3        :        :                   :         : 1         :                
+TDO                          : J4        : output :                   :         : 1         :                
+TMS                          : J5        : input  :                   :         : 1         :                
+VCCINT                       : J6        : power  :                   : 1.2V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+GND                          : J9        : gnd    :                   :         :           :                
+GND                          : J10       : gnd    :                   :         :           :                
+GND                          : J11       : gnd    :                   :         :           :                
+VCCINT                       : J12       : power  :                   : 1.2V    :           :                
+q[9]                         : J13       : output : 2.5 V             :         : 5         : N              
+q[10]                        : J14       : output : 2.5 V             :         : 5         : N              
+q[3]                         : J15       : output : 2.5 V             :         : 5         : N              
+q[0]                         : J16       : output : 2.5 V             :         : 5         : N              
+cnt_measure[0]               : K1        : output : 2.5 V             :         : 2         : N              
+cnt_measure[1]               : K2        : output : 2.5 V             :         : 2         : N              
+VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
+GND                          : K4        : gnd    :                   :         :           :                
+cnt_measure[11]              : K5        : output : 2.5 V             :         : 2         : N              
+GND                          : K6        : gnd    :                   :         :           :                
+VCCINT                       : K7        : power  :                   : 1.2V    :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+VCCINT                       : K10       : power  :                   : 1.2V    :           :                
+VCCINT                       : K11       : power  :                   : 1.2V    :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+GND                          : K13       : gnd    :                   :         :           :                
+VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
+cnt_point[6]                 : K15       : output : 2.5 V             :         : 5         : N              
+cnt_point[1]                 : K16       : output : 2.5 V             :         : 5         : N              
+cnt_measure[10]              : L1        : output : 2.5 V             :         : 2         : N              
+cnt_measure[16]              : L2        : output : 2.5 V             :         : 2         : N              
+cnt_measure[9]               : L3        : output : 2.5 V             :         : 2         : N              
+ratio_en                     : L4        : output : 2.5 V             :         : 2         : N              
+VCCA1                        : L5        : power  :                   : 2.5V    :           :                
+VCCINT                       : L6        : power  :                   : 1.2V    :           :                
+sum5[3]                      : L7        : output : 2.5 V             :         : 3         : N              
+sum5[8]                      : L8        : output : 2.5 V             :         : 3         : N              
+GND                          : L9        : gnd    :                   :         :           :                
+GND                          : L10       : gnd    :                   :         :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+VCCA4                        : L12       : power  :                   : 2.5V    :           :                
+sum3[0]                      : L13       : output : 2.5 V             :         : 5         : N              
+cnt_point[7]                 : L14       : output : 2.5 V             :         : 5         : N              
+q[2]                         : L15       : output : 2.5 V             :         : 5         : N              
+cnt_point[3]                 : L16       : output : 2.5 V             :         : 5         : N              
+data[0]                      : M1        : input  : 2.5 V             :         : 2         : N              
+enable                       : M2        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
+GND                          : M4        : gnd    :                   :         :           :                
+GNDA1                        : M5        : gnd    :                   :         :           :                
+cnt_ratio[8]                 : M6        : output : 2.5 V             :         : 3         : N              
+switch                       : M7        : output : 2.5 V             :         : 3         : N              
+sum6[8]                      : M8        : output : 2.5 V             :         : 3         : N              
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+cnt_point[9]                 : M10       : output : 2.5 V             :         : 4         : N              
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GNDA4                        : M12       : gnd    :                   :         :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCCIO5                       : M14       : power  :                   : 2.5V    : 5         :                
+data[6]                      : M15       : input  : 2.5 V             :         : 5         : N              
+data[5]                      : M16       : input  : 2.5 V             :         : 5         : N              
+cnt_save[1]                  : N1        : output : 2.5 V             :         : 2         : N              
+cnt_measure[2]               : N2        : output : 2.5 V             :         : 2         : N              
+cnt_ratio[10]                : N3        : output : 2.5 V             :         : 3         : N              
+VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
+cnt_measure[14]              : N5        : output : 2.5 V             :         : 3         : N              
+cnt_measure[7]               : N6        : output : 2.5 V             :         : 3         : N              
+GND                          : N7        : gnd    :                   :         :           :                
+sum6[4]                      : N8        : output : 2.5 V             :         : 3         : N              
+sum3[4]                      : N9        : output : 2.5 V             :         : 4         : N              
+GND                          : N10       : gnd    :                   :         :           :                
+cnt_div[6]                   : N11       : output : 2.5 V             :         : 4         : N              
+cnt_div[8]                   : N12       : output : 2.5 V             :         : 4         : N              
+VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
+cnt_div[5]                   : N14       : output : 2.5 V             :         : 5         : N              
+cnt_point[5]                 : N15       : output : 2.5 V             :         : 5         : N              
+q[8]                         : N16       : output : 2.5 V             :         : 5         : N              
+cnt_measure[12]              : P1        : output : 2.5 V             :         : 2         : N              
+cnt_measure[4]               : P2        : output : 2.5 V             :         : 2         : N              
+cnt_save[0]                  : P3        : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : P4        : power  :                   : 2.5V    : 3         :                
+GND                          : P5        : gnd    :                   :         :           :                
+sum3[6]                      : P6        : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
+sum6[0]                      : P8        : output : 2.5 V             :         : 3         : N              
+q[11]                        : P9        : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
+cnt_div[1]                   : P11       : output : 2.5 V             :         : 4         : N              
+GND                          : P12       : gnd    :                   :         :           :                
+VCCIO4                       : P13       : power  :                   : 2.5V    : 4         :                
+cnt_div[7]                   : P14       : output : 2.5 V             :         : 4         : N              
+cnt_div[3]                   : P15       : output : 2.5 V             :         : 5         : N              
+cnt_div[9]                   : P16       : output : 2.5 V             :         : 5         : N              
+cnt_measure[6]               : R1        : output : 2.5 V             :         : 2         : N              
+GND                          : R2        : gnd    :                   :         :           :                
+cnt_measure[15]              : R3        : output : 2.5 V             :         : 3         : N              
+cnt_measure[5]               : R4        : output : 2.5 V             :         : 3         : N              
+sum5[11]                     : R5        : output : 2.5 V             :         : 3         : N              
+sum3[2]                      : R6        : output : 2.5 V             :         : 3         : N              
+sum3[3]                      : R7        : output : 2.5 V             :         : 3         : N              
+data[1]                      : R8        : input  : 2.5 V             :         : 3         : N              
+data[3]                      : R9        : input  : 2.5 V             :         : 4         : N              
+ready                        : R10       : output : 2.5 V             :         : 4         : N              
+wrreq                        : R11       : output : 2.5 V             :         : 4         : N              
+rdreq                        : R12       : output : 2.5 V             :         : 4         : N              
+cnt_div[0]                   : R13       : output : 2.5 V             :         : 4         : N              
+cnt_div[4]                   : R14       : output : 2.5 V             :         : 4         : N              
+GND                          : R15       : gnd    :                   :         :           :                
+cnt_point[2]                 : R16       : output : 2.5 V             :         : 5         : N              
+VCCIO3                       : T1        : power  :                   : 2.5V    : 3         :                
+cnt_measure[8]               : T2        : output : 2.5 V             :         : 3         : N              
+cnt_save[2]                  : T3        : output : 2.5 V             :         : 3         : N              
+cnt_save[3]                  : T4        : output : 2.5 V             :         : 3         : N              
+sum3[8]                      : T5        : output : 2.5 V             :         : 3         : N              
+cnt_point[0]                 : T6        : output : 2.5 V             :         : 3         : N              
+sum5[4]                      : T7        : output : 2.5 V             :         : 3         : N              
+data[2]                      : T8        : input  : 2.5 V             :         : 3         : N              
+data[4]                      : T9        : input  : 2.5 V             :         : 4         : N              
+sum6[5]                      : T10       : output : 2.5 V             :         : 4         : N              
+div_en                       : T11       : output : 2.5 V             :         : 4         : N              
+q[4]                         : T12       : output : 2.5 V             :         : 4         : N              
+cnt_point[4]                 : T13       : output : 2.5 V             :         : 4         : N              
+cnt_div[10]                  : T14       : output : 2.5 V             :         : 4         : N              
+cnt_div[2]                   : T15       : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : T16       : power  :                   : 2.5V    : 4         :                

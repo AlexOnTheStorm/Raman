@@ -1,0 +1,16 @@
+`timescale 1 ns / 10 ps
+
+module Accumulation (
+clk,
+rdreq,
+q,
+cnt_point,
+cnt_measure,
+sum);
+
+input clk;
+input rdreq;
+input [11:0] q;
+input [10:0] cnt_point;
+input [16:0] cnt_measure;
+output reg 
