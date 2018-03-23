@@ -9,7 +9,6 @@
 # Compile of Switch.v was successful.
 # Compile of Divider2.v was successful.
 # Compile of Ratio.v was successful.
-# 11 compiles, 0 failed with no errors. 
-restart -f
-# No Design Loaded!
+# Compile of TestbenchRam.v was successful.
+# 12 compiles, 0 failed with no errors. 
 vsim +altera -do Raman_run_msim_rtl_verilog.do -l msim_transcript -gui work.tbRam

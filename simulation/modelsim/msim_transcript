@@ -71,6 +71,7 @@
 # Top level modules:
 # 	Divider2
 # 
+# Load canceled
 project open D:/Quartus/Raman/FIFORam
 # reading D:\Quartus\modelsim_ase\win32aloem/../modelsim.ini
 # Loading project FIFORam

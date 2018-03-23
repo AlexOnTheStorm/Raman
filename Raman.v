@@ -1,184 +1,154 @@
-`timescale 1 ns / 10 ps
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
 
-module Raman (
-	clock,
-	data,
-	rdreq,
-	wrreq,
-	q,
-	cnt_point,
-	cnt_measure,
-	cnt_save,
-	cnt_div,
+// PROGRAM		"Quartus II 64-Bit"
+// VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
+// CREATED		"Fri Mar 23 19:06:47 2018"
+
+module Raman(
 	enable,
+	clk,
+	data,
 	switch,
-	ready,
-	div_en,
-	sum1,
-	sum2,
-	sum3,
-	sum5,
-	sum6,
-	//sum7,
-	cnt_ratio,
-	ratio_en,
-	ready_ratio
+	eight,
+	nine,
+	one,
+	ten,
+	three,
+	two
+);
+
+
+input wire	enable;
+input wire	clk;
+input wire	[11:0] data;
+output wire	switch;
+output wire	[11:0] eight;
+output wire	[11:0] nine;
+output wire	[11:0] one;
+output wire	[11:0] ten;
+output wire	[11:0] three;
+output wire	[11:0] two;
+
+wire	SYNTHESIZED_WIRE_20;
+wire	SYNTHESIZED_WIRE_1;
+wire	[16:0] SYNTHESIZED_WIRE_21;
+wire	[10:0] SYNTHESIZED_WIRE_22;
+wire	[11:0] SYNTHESIZED_WIRE_5;
+wire	SYNTHESIZED_WIRE_23;
+wire	[289:0] SYNTHESIZED_WIRE_9;
+wire	[119:0] SYNTHESIZED_WIRE_13;
+wire	[1199:0] SYNTHESIZED_WIRE_17;
+
+assign	switch = SYNTHESIZED_WIRE_23;
+
+
+
+
+FIFORam	b2v_inst(
+	
+	.clock(clk),
+	.rdreq(SYNTHESIZED_WIRE_20),
+	
+	.wrreq(SYNTHESIZED_WIRE_1),
+	.data(data),
+	
+	
+	.q(SYNTHESIZED_WIRE_5)
 	);
-	
-	parameter POINTS = 10;
-	parameter MEASURES = 100;
-	defparam Raman.FirstAction.POINTS = 10;
-	defparam Raman.FirstAction.MEASURES = 100;
-	defparam Raman.Accum1.POINTS = 10;
-	defparam Raman.Accum1.MEASURES = 100;
-	defparam Raman.Store1.POINTS = 10;
-	defparam Raman.Store1.MEASURES = 100;
-	defparam Raman.Pool1.POINTS = 10;
-	defparam Raman.Pool1.MEASURES = 100;
-	defparam Raman.Switch1.POINTS = 10;
-	defparam Raman.Switch1.MEASURES = 100;
-	defparam Raman.Ratio1.POINTS = 10;
-	defparam Raman.Ratio1.MEASURES = 100;
 
-	input	  clock;
-	input	[11:0]  data;
-	input enable;
-	output	  rdreq;
-	output	  wrreq;
-	output	[11:0]  q;
-	output [10:0] cnt_point;
-	output [16:0] cnt_measure;
-	output [3:0] cnt_save;
-	
-	output switch;
-	
-	output [10:0] cnt_div;
-	output ready;
-	output div_en;
-	
-	output [10:0] cnt_ratio;
-	output ratio_en;
-	output ready_ratio;
-	
-	output [11:0] sum1;
-	output [11:0] sum2;
-	output [11:0] sum3;
-	output [11:0] sum5;
-	output [11:0] sum6;
-	//output [11:0] sum7;
-	//output [11:0] sum8;
-	//output [4:0] sum9;
-	//output sum10;
-	
-	wire [12*POINTS-1:0] ratio;
-	wire [29*POINTS-1:0] sum;
-	wire [12*POINTS-1:0] store;
-	wire [12*POINTS*10-1:0] storage;
-	
-	wire [11:0] quotient;
 
-	/*assign sum1 = store [29*10*1-1 -: 29]; //12бит * 100000 измерений (17) * номер участка (POINTS) * ячейка памяти (1-10)
-	assign sum2 = store [29*10*2-1 -: 29];
-	assign sum3 = store [29*10*3-1 -: 29];
-	assign sum4 = store [29*10*4-1 -: 29];
-	assign sum5 = store [29*10*5-1 -: 29];
-	assign sum6 = store [29*10*6-1 -: 29];
-	assign sum7 = store [29*10*7-1 -: 29];
-	assign sum8 = store [29*10*8-1 -: 29];
-	assign sum9 = store [29*10*9-1 -: 29];
-	assign sum10 = store [29*10*10-1 -: 29];*/
-	
-	/*assign sum1 = sum [29*1-1 -: 29]; //12бит * 100000 измерений (17) * номер участка (POINTS)
-	assign sum2 = sum [29*2-1 -: 29];
-	assign sum3 = sum [29*3-1 -: 29];
-	assign sum4 = sum [29*4-1 -: 29];
-	assign sum5 = sum [29*5-1 -: 29];
-	assign sum6 = sum [29*6-1 -: 29];
-	//assign sum7 = sum [29*7-1 -: 29];
-	//assign sum8 = sum [29*8-1 -: 29];
-	assign sum9 = sum [29*9-1 -: 29];
-	assign sum10 = sum [29*10-1 -: 29];
+Action	b2v_inst2(
+	.enable(enable),
+	.clk(clk),
+	.wrreq(SYNTHESIZED_WIRE_1),
+	.rdreq(SYNTHESIZED_WIRE_20),
+	.cnt_measure(SYNTHESIZED_WIRE_21),
+	.cnt_point(SYNTHESIZED_WIRE_22)
+	);
+	defparam	b2v_inst2.MEASURES = 100;
+	defparam	b2v_inst2.POINTS = 10;
 
-	
-	assign sum9 = quotient;
-	assign sum10 = ready;*/
 
+Accumulation	b2v_inst3(
+	.clk(clk),
+	.rdreq(SYNTHESIZED_WIRE_20),
+	.cnt_measure(SYNTHESIZED_WIRE_21),
+	.cnt_point(SYNTHESIZED_WIRE_22),
+	.q(SYNTHESIZED_WIRE_5),
 	
-	assign sum1 = ratio [12*1+0*12*POINTS-1 -: 12];
-	assign sum2 = ratio [12*10+0*12*POINTS-1 -: 12];
-	assign sum3 = storage [12*1+0*12*POINTS-1 -: 12];
-	assign sum5 = storage [12*2+0*12*POINTS-1 -: 12];
-	assign sum6 = storage [12*3+0*12*POINTS-1 -: 12];
-	//assign sum7 = store [12*3+0*12*POINTS-1 -: 12];
-	//assign sum8 = sum [29*8-1 -: 29];
-	//assign sum9 = sum [29*9-1 -: 29];
-	//assign sum10 = sum [29*10-1 -: 29];
-	
-	Action FirstAction  (
-				.enable(enable),
-				.wrreq(wrreq),
-				.rdreq(rdreq),
-				.clk(clock),
-				.cnt_point(cnt_point),
-				.cnt_measure(cnt_measure),
-				.cnt_save(cnt_save));
-				
+	.sum(SYNTHESIZED_WIRE_9));
+	defparam	b2v_inst3.MEASURES = 100;
+	defparam	b2v_inst3.POINTS = 10;
 
-	FIFORam	Ram (
-				.clock (clock),
-				.wrreq (wrreq),
-				.data (data),
-				.rdreq (rdreq),
-				.q (q));
 
-				
-	Accumulation Accum1 (
-				.clk(clock),
-				.rdreq(rdreq),
-				.cnt_point(cnt_point),
-				.cnt_measure(cnt_measure),
-				.q(q),
-				.sum(sum));
-				
-	Pool Pool1 (
-				.clk(clock),
-				.cnt_measure(cnt_measure),
-				.cnt_point(cnt_point),
-				.cnt_save(cnt_save),
-				.sum(sum),
-				.store(store),
-				.ready(ready),
-				.cnt_div(cnt_div),
-				.div_en(div_en),
-				.switch(switch));
-				
-	Storage Store1 (
-				.clk(clock),
-				.cnt_measure(cnt_measure),
-				.store(store),
-				.storage(storage),
-				.switch(switch),
-				.cnt_point(cnt_point),
-				.cnt_save(cnt_save));
-				
-				
-	Ratio Ratio1 (
-				.clk(clock),
-				.cnt_measure(cnt_measure),
-				.cnt_point(cnt_point),
-				.storage(storage),
-				.switch(switch),
-				.cnt_ratio(cnt_ratio),
-				.ready_ratio(ready_ratio),
-				.ratio_en(ratio_en),
-				.ratio(ratio),
-				.quotient(quotient));
-				
-	Switch Switch1 (
-				.clk(clock),
-				.cnt_measure(cnt_measure),
-				.cnt_point(cnt_point),
-				.cnt_save(cnt_save),
-				.switch(switch));
+Pool	b2v_inst4(
+	.clk(clk),
+	.switch(SYNTHESIZED_WIRE_23),
+	.cnt_measure(SYNTHESIZED_WIRE_21),
+	.cnt_point(SYNTHESIZED_WIRE_22),
 	
+	.sum(SYNTHESIZED_WIRE_9),
+	
+	
+	
+	
+	.store(SYNTHESIZED_WIRE_13));
+	defparam	b2v_inst4.MEASURES = 100;
+	defparam	b2v_inst4.POINTS = 10;
+
+
+Storage	b2v_inst5(
+	.clk(clk),
+	.switch(SYNTHESIZED_WIRE_23),
+	.cnt_measure(SYNTHESIZED_WIRE_21),
+	.cnt_point(SYNTHESIZED_WIRE_22),
+	
+	.store(SYNTHESIZED_WIRE_13),
+	.storage(SYNTHESIZED_WIRE_17));
+	defparam	b2v_inst5.MEASURES = 100;
+	defparam	b2v_inst5.POINTS = 10;
+
+
+Ratio	b2v_inst6(
+	.clk(clk),
+	.switch(SYNTHESIZED_WIRE_23),
+	.cnt_measure(SYNTHESIZED_WIRE_21),
+	.cnt_point(SYNTHESIZED_WIRE_22),
+	.storage(SYNTHESIZED_WIRE_17),
+	
+	
+	
+	.eight(eight),
+	.nine(nine),
+	.one(one),
+	
+	.ten(ten),
+	.three(three),
+	.two(two));
+	defparam	b2v_inst6.MEASURES = 100;
+	defparam	b2v_inst6.POINTS = 10;
+
+
+Switch	b2v_inst7(
+	.clk(clk),
+	.cnt_measure(SYNTHESIZED_WIRE_21),
+	.cnt_point(SYNTHESIZED_WIRE_22),
+	
+	.switch(SYNTHESIZED_WIRE_23));
+	defparam	b2v_inst7.MEASURES = 100;
+	defparam	b2v_inst7.POINTS = 10;
+
+
 endmodule

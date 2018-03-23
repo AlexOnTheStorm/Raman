@@ -17,8 +17,8 @@ output reg [10:0] cnt_point;
 output reg [16:0] cnt_measure;
 output reg [3:0] cnt_save;
 
-parameter POINTS;
-parameter MEASURES;
+parameter POINTS = 10;
+parameter MEASURES = 100;
 
 initial
 begin

@@ -8,8 +8,9 @@ cnt_save,
 switch,
 );
 
-parameter POINTS;
-parameter MEASURES;
+parameter POINTS = 10;
+parameter MEASURES = 100;
+
 
 input clk;
 input [16:0] cnt_measure;

@@ -1,13 +1,29 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /tbRam/data
-add wave -noupdate /tbRam/clk
-add wave -noupdate /tbRam/rdreq
-add wave -noupdate /tbRam/wrreq
-add wave -noupdate /tbRam/q
+add wave -noupdate -radix unsigned /tbRam/data
+add wave -noupdate -radix unsigned /tbRam/clk
+add wave -noupdate -radix unsigned /tbRam/enable
+add wave -noupdate -radix unsigned /tbRam/q
+add wave -noupdate -radix unsigned /tbRam/cnt_point
+add wave -noupdate -radix unsigned /tbRam/cnt_measure
+add wave -noupdate -radix unsigned /tbRam/cnt_save
+add wave -noupdate -radix unsigned /tbRam/cnt_div
+add wave -noupdate -radix unsigned /tbRam/switch
+add wave -noupdate -radix unsigned /tbRam/ready
+add wave -noupdate -radix unsigned /tbRam/div_en
+add wave -noupdate -radix unsigned /tbRam/sum1
+add wave -noupdate -radix unsigned /tbRam/sum2
+add wave -noupdate -radix unsigned /tbRam/sum3
+add wave -noupdate -radix unsigned /tbRam/sum5
+add wave -noupdate -radix unsigned /tbRam/sum6
+add wave -noupdate -radix unsigned /tbRam/cnt_ratio
+add wave -noupdate -radix unsigned /tbRam/ready_ratio
+add wave -noupdate -radix unsigned /tbRam/ratio_en
+add wave -noupdate -radix unsigned /tbRam/rdreq
+add wave -noupdate -radix unsigned /tbRam/wrreq
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {50512 ps} 0}
-quietly wave cursor active 1
+WaveRestoreCursors {{Cursor 1} {0 ps} 0}
+quietly wave cursor active 0
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
@@ -22,4 +38,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {168 ns}
+WaveRestoreZoom {0 ps} {1 ns}

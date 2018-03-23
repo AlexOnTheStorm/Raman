@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Raman
-Wed Mar 21 13:21:20 2018
+Fri Mar 23 19:02:25 2018
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -22,30 +22,27 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
  14. Inverted Register Statistics
  15. Registers Packed Into Inferred Megafunctions
  16. Multiplexer Restructuring Statistics (Restructuring Performed)
- 17. Source assignments for FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|altsyncram_p7e1:FIFOram
- 18. Source assignments for Ratio:Ratio1|altshift_taps:store_ratio_rtl_0|shift_taps_rnm:auto_generated|altsyncram_4e81:altsyncram2
- 19. Parameter Settings for User Entity Instance: Top-level Entity: |Raman
- 20. Parameter Settings for User Entity Instance: Action:FirstAction
- 21. Parameter Settings for User Entity Instance: FIFORam:Ram|scfifo:scfifo_component
- 22. Parameter Settings for User Entity Instance: Accumulation:Accum1
- 23. Parameter Settings for User Entity Instance: Pool:Pool1
- 24. Parameter Settings for User Entity Instance: Pool:Pool1|Divider:Div1
- 25. Parameter Settings for User Entity Instance: Storage:Store1
- 26. Parameter Settings for User Entity Instance: Ratio:Ratio1
- 27. Parameter Settings for User Entity Instance: Ratio:Ratio1|Divider2:Div2
- 28. Parameter Settings for User Entity Instance: Switch:Switch1
- 29. Parameter Settings for Inferred Entity Instance: Ratio:Ratio1|altshift_taps:store_ratio_rtl_0
- 30. Parameter Settings for Inferred Entity Instance: Pool:Pool1|lpm_mult:Mult1
- 31. Parameter Settings for Inferred Entity Instance: Accumulation:Accum1|lpm_mult:Mult0
- 32. scfifo Parameter Settings by Entity Instance
- 33. altshift_taps Parameter Settings by Entity Instance
- 34. lpm_mult Parameter Settings by Entity Instance
- 35. Port Connectivity Checks: "Ratio:Ratio1|Divider2:Div2"
- 36. Port Connectivity Checks: "Ratio:Ratio1"
- 37. Port Connectivity Checks: "Pool:Pool1|Divider:Div1"
- 38. Port Connectivity Checks: "FIFORam:Ram"
- 39. Elapsed Time Per Partition
- 40. Analysis & Synthesis Messages
+ 17. Source assignments for FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|altsyncram_p7e1:FIFOram
+ 18. Source assignments for Ratio:inst6|altshift_taps:store_ratio_rtl_0|shift_taps_vnm:auto_generated|altsyncram_2e81:altsyncram2
+ 19. Parameter Settings for User Entity Instance: Pool:inst4
+ 20. Parameter Settings for User Entity Instance: Pool:inst4|Divider:Div1
+ 21. Parameter Settings for User Entity Instance: Switch:inst7
+ 22. Parameter Settings for User Entity Instance: Action:inst2
+ 23. Parameter Settings for User Entity Instance: Accumulation:inst3
+ 24. Parameter Settings for User Entity Instance: FIFORam:inst|scfifo:scfifo_component
+ 25. Parameter Settings for User Entity Instance: Ratio:inst6
+ 26. Parameter Settings for User Entity Instance: Ratio:inst6|Divider2:Div2
+ 27. Parameter Settings for User Entity Instance: Storage:inst5
+ 28. Parameter Settings for Inferred Entity Instance: Ratio:inst6|altshift_taps:store_ratio_rtl_0
+ 29. Parameter Settings for Inferred Entity Instance: Accumulation:inst3|lpm_mult:Mult0
+ 30. Parameter Settings for Inferred Entity Instance: Pool:inst4|lpm_mult:Mult1
+ 31. scfifo Parameter Settings by Entity Instance
+ 32. altshift_taps Parameter Settings by Entity Instance
+ 33. lpm_mult Parameter Settings by Entity Instance
+ 34. Port Connectivity Checks: "Ratio:inst6|Divider2:Div2"
+ 35. Port Connectivity Checks: "Pool:inst4|Divider:Div1"
+ 36. Elapsed Time Per Partition
+ 37. Analysis & Synthesis Messages
 
 
 
@@ -71,18 +68,18 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 21 13:21:20 2018      ;
+; Analysis & Synthesis Status        ; Successful - Fri Mar 23 19:02:25 2018      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Raman                                      ;
 ; Top-level Entity Name              ; Raman                                      ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 9,930                                      ;
-;     Total combinational functions  ; 8,138                                      ;
-;     Dedicated logic registers      ; 2,647                                      ;
-; Total registers                    ; 2647                                       ;
-; Total pins                         ; 147                                        ;
+; Total logic elements               ; 10,124                                     ;
+;     Total combinational functions  ; 8,322                                      ;
+;     Dedicated logic registers      ; 2,655                                      ;
+; Total registers                    ; 2655                                       ;
+; Total pins                         ; 144                                        ;
 ; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 24,660                                     ;
+; Total memory bits                  ; 24,648                                     ;
 ; Embedded Multiplier 9-bit elements ; 4                                          ;
 ; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
@@ -193,99 +190,99 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                       ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
-; FIFORam.v                        ; yes             ; User Wizard-Generated File   ; D:/Quartus/Raman/FIFORam.v                                         ;         ;
-; Raman.v                          ; yes             ; User Verilog HDL File        ; D:/Quartus/Raman/Raman.v                                           ;         ;
-; Action.v                         ; yes             ; User Verilog HDL File        ; D:/Quartus/Raman/Action.v                                          ;         ;
-; Accumulation.v                   ; yes             ; User Verilog HDL File        ; D:/Quartus/Raman/Accumulation.v                                    ;         ;
-; Storage.v                        ; yes             ; User Verilog HDL File        ; D:/Quartus/Raman/Storage.v                                         ;         ;
-; Divider.v                        ; yes             ; User Verilog HDL File        ; D:/Quartus/Raman/Divider.v                                         ;         ;
-; Pool.v                           ; yes             ; User Verilog HDL File        ; D:/Quartus/Raman/Pool.v                                            ;         ;
-; Switch.v                         ; yes             ; User Verilog HDL File        ; D:/Quartus/Raman/Switch.v                                          ;         ;
-; Ratio.v                          ; yes             ; User Verilog HDL File        ; D:/Quartus/Raman/Ratio.v                                           ;         ;
-; Divider2.v                       ; yes             ; User Verilog HDL File        ; D:/Quartus/Raman/Divider2.v                                        ;         ;
-; scfifo.tdf                       ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/scfifo.tdf              ;         ;
-; a_regfifo.inc                    ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/a_regfifo.inc           ;         ;
-; a_dpfifo.inc                     ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/a_dpfifo.inc            ;         ;
-; a_i2fifo.inc                     ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/a_i2fifo.inc            ;         ;
-; a_fffifo.inc                     ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/a_fffifo.inc            ;         ;
-; a_f2fifo.inc                     ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/a_f2fifo.inc            ;         ;
-; aglobal131.inc                   ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/aglobal131.inc          ;         ;
-; db/scfifo_bk41.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/Quartus/Raman/db/scfifo_bk41.tdf                                ;         ;
-; db/a_dpfifo_ub41.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/Quartus/Raman/db/a_dpfifo_ub41.tdf                              ;         ;
-; db/altsyncram_p7e1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/Quartus/Raman/db/altsyncram_p7e1.tdf                            ;         ;
-; db/cmpr_vt8.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/Quartus/Raman/db/cmpr_vt8.tdf                                   ;         ;
-; db/cntr_cpb.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/Quartus/Raman/db/cntr_cpb.tdf                                   ;         ;
-; db/cntr_pp7.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/Quartus/Raman/db/cntr_pp7.tdf                                   ;         ;
-; db/cntr_dpb.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/Quartus/Raman/db/cntr_dpb.tdf                                   ;         ;
-; altshift_taps.tdf                ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/altshift_taps.tdf       ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/altdpram.inc            ;         ;
-; lpm_counter.inc                  ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/lpm_counter.inc         ;         ;
-; lpm_compare.inc                  ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/lpm_compare.inc         ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
-; db/shift_taps_rnm.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/Quartus/Raman/db/shift_taps_rnm.tdf                             ;         ;
-; db/altsyncram_4e81.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/Quartus/Raman/db/altsyncram_4e81.tdf                            ;         ;
-; db/cntr_bpf.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/Quartus/Raman/db/cntr_bpf.tdf                                   ;         ;
-; db/cmpr_pgc.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/Quartus/Raman/db/cmpr_pgc.tdf                                   ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/lpm_mult.tdf            ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/lpm_add_sub.inc         ;         ;
-; multcore.inc                     ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/multcore.inc            ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/bypassff.inc            ;         ;
-; altshift.inc                     ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/altshift.inc            ;         ;
-; multcore.tdf                     ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/multcore.tdf            ;         ;
-; csa_add.inc                      ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/csa_add.inc             ;         ;
-; mpar_add.inc                     ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/mpar_add.inc            ;         ;
-; muleabz.inc                      ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/muleabz.inc             ;         ;
-; mul_lfrg.inc                     ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/mul_lfrg.inc            ;         ;
-; mul_boothc.inc                   ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/mul_boothc.inc          ;         ;
-; alt_ded_mult.inc                 ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/alt_ded_mult.inc        ;         ;
-; alt_ded_mult_y.inc               ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/alt_ded_mult_y.inc      ;         ;
-; dffpipe.inc                      ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/dffpipe.inc             ;         ;
-; mpar_add.tdf                     ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/mpar_add.tdf            ;         ;
-; lpm_add_sub.tdf                  ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;         ;
-; addcore.inc                      ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/addcore.inc             ;         ;
-; look_add.inc                     ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/look_add.inc            ;         ;
-; alt_stratix_add_sub.inc          ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;         ;
-; db/add_sub_bfh.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/Quartus/Raman/db/add_sub_bfh.tdf                                ;         ;
-; db/add_sub_mgh.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/Quartus/Raman/db/add_sub_mgh.tdf                                ;         ;
-; altshift.tdf                     ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/altshift.tdf            ;         ;
-; db/mult_bft.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/Quartus/Raman/db/mult_bft.tdf                                   ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+; FIFORam.v                        ; yes             ; User Wizard-Generated File         ; D:/Quartus/Raman/FIFORam.v                                         ;         ;
+; Action.v                         ; yes             ; User Verilog HDL File              ; D:/Quartus/Raman/Action.v                                          ;         ;
+; Accumulation.v                   ; yes             ; User Verilog HDL File              ; D:/Quartus/Raman/Accumulation.v                                    ;         ;
+; Storage.v                        ; yes             ; User Verilog HDL File              ; D:/Quartus/Raman/Storage.v                                         ;         ;
+; Divider.v                        ; yes             ; User Verilog HDL File              ; D:/Quartus/Raman/Divider.v                                         ;         ;
+; Pool.v                           ; yes             ; User Verilog HDL File              ; D:/Quartus/Raman/Pool.v                                            ;         ;
+; Switch.v                         ; yes             ; User Verilog HDL File              ; D:/Quartus/Raman/Switch.v                                          ;         ;
+; Ratio.v                          ; yes             ; User Verilog HDL File              ; D:/Quartus/Raman/Ratio.v                                           ;         ;
+; Divider2.v                       ; yes             ; User Verilog HDL File              ; D:/Quartus/Raman/Divider2.v                                        ;         ;
+; Raman.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/Quartus/Raman/Raman.bdf                                         ;         ;
+; scfifo.tdf                       ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/scfifo.tdf              ;         ;
+; a_regfifo.inc                    ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/a_regfifo.inc           ;         ;
+; a_dpfifo.inc                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/a_dpfifo.inc            ;         ;
+; a_i2fifo.inc                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/a_i2fifo.inc            ;         ;
+; a_fffifo.inc                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/a_fffifo.inc            ;         ;
+; a_f2fifo.inc                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/a_f2fifo.inc            ;         ;
+; aglobal131.inc                   ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/aglobal131.inc          ;         ;
+; db/scfifo_bk41.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/Quartus/Raman/db/scfifo_bk41.tdf                                ;         ;
+; db/a_dpfifo_ub41.tdf             ; yes             ; Auto-Generated Megafunction        ; D:/Quartus/Raman/db/a_dpfifo_ub41.tdf                              ;         ;
+; db/altsyncram_p7e1.tdf           ; yes             ; Auto-Generated Megafunction        ; D:/Quartus/Raman/db/altsyncram_p7e1.tdf                            ;         ;
+; db/cmpr_vt8.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Quartus/Raman/db/cmpr_vt8.tdf                                   ;         ;
+; db/cntr_cpb.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Quartus/Raman/db/cntr_cpb.tdf                                   ;         ;
+; db/cntr_pp7.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Quartus/Raman/db/cntr_pp7.tdf                                   ;         ;
+; db/cntr_dpb.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Quartus/Raman/db/cntr_dpb.tdf                                   ;         ;
+; altshift_taps.tdf                ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/altshift_taps.tdf       ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/altdpram.inc            ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/lpm_counter.inc         ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/lpm_compare.inc         ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
+; db/shift_taps_vnm.tdf            ; yes             ; Auto-Generated Megafunction        ; D:/Quartus/Raman/db/shift_taps_vnm.tdf                             ;         ;
+; db/altsyncram_2e81.tdf           ; yes             ; Auto-Generated Megafunction        ; D:/Quartus/Raman/db/altsyncram_2e81.tdf                            ;         ;
+; db/cntr_apf.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Quartus/Raman/db/cntr_apf.tdf                                   ;         ;
+; db/cmpr_pgc.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Quartus/Raman/db/cmpr_pgc.tdf                                   ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/lpm_mult.tdf            ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/lpm_add_sub.inc         ;         ;
+; multcore.inc                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/multcore.inc            ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/bypassff.inc            ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/altshift.inc            ;         ;
+; db/mult_bft.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Quartus/Raman/db/mult_bft.tdf                                   ;         ;
+; multcore.tdf                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/multcore.tdf            ;         ;
+; csa_add.inc                      ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/csa_add.inc             ;         ;
+; mpar_add.inc                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/mpar_add.inc            ;         ;
+; muleabz.inc                      ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/muleabz.inc             ;         ;
+; mul_lfrg.inc                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/mul_lfrg.inc            ;         ;
+; mul_boothc.inc                   ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/mul_boothc.inc          ;         ;
+; alt_ded_mult.inc                 ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/alt_ded_mult.inc        ;         ;
+; alt_ded_mult_y.inc               ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/alt_ded_mult_y.inc      ;         ;
+; dffpipe.inc                      ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/dffpipe.inc             ;         ;
+; mpar_add.tdf                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/mpar_add.tdf            ;         ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;         ;
+; addcore.inc                      ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/addcore.inc             ;         ;
+; look_add.inc                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/look_add.inc            ;         ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;         ;
+; db/add_sub_bfh.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/Quartus/Raman/db/add_sub_bfh.tdf                                ;         ;
+; db/add_sub_mgh.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/Quartus/Raman/db/add_sub_mgh.tdf                                ;         ;
+; altshift.tdf                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/altshift.tdf            ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 9,930       ;
-;                                             ;             ;
-; Total combinational functions               ; 8138        ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 3125        ;
-;     -- 3 input functions                    ; 4177        ;
-;     -- <=2 input functions                  ; 836         ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 7429        ;
-;     -- arithmetic mode                      ; 709         ;
-;                                             ;             ;
-; Total registers                             ; 2647        ;
-;     -- Dedicated logic registers            ; 2647        ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 147         ;
-; Total memory bits                           ; 24660       ;
-; Embedded Multiplier 9-bit elements          ; 4           ;
-; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 2671        ;
-; Total fan-out                               ; 35117       ;
-; Average fan-out                             ; 3.16        ;
-+---------------------------------------------+-------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 10,124    ;
+;                                             ;           ;
+; Total combinational functions               ; 8322      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 3724      ;
+;     -- 3 input functions                    ; 4024      ;
+;     -- <=2 input functions                  ; 574       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 7613      ;
+;     -- arithmetic mode                      ; 709       ;
+;                                             ;           ;
+; Total registers                             ; 2655      ;
+;     -- Dedicated logic registers            ; 2655      ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 144       ;
+; Total memory bits                           ; 24648     ;
+; Embedded Multiplier 9-bit elements          ; 4         ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 2679      ;
+; Total fan-out                               ; 36571     ;
+; Average fan-out                             ; 3.24      ;
++---------------------------------------------+-----------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -293,49 +290,49 @@ applicable agreement for further details.
 +---------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                      ; Library Name ;
 +---------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |Raman                                            ; 8138 (1)          ; 2647 (0)     ; 24660       ; 4            ; 0       ; 2         ; 147  ; 0            ; |Raman                                                                                                                                   ; work         ;
-;    |Accumulation:Accum1|                          ; 1086 (1072)       ; 290 (290)    ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |Raman|Accumulation:Accum1                                                                                                               ; work         ;
-;       |lpm_mult:Mult0|                            ; 14 (0)            ; 0 (0)        ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |Raman|Accumulation:Accum1|lpm_mult:Mult0                                                                                                ; work         ;
-;          |mult_bft:auto_generated|                ; 14 (14)           ; 0 (0)        ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |Raman|Accumulation:Accum1|lpm_mult:Mult0|mult_bft:auto_generated                                                                        ; work         ;
-;    |Action:FirstAction|                           ; 66 (66)           ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Action:FirstAction                                                                                                                ; work         ;
-;    |FIFORam:Ram|                                  ; 60 (0)            ; 48 (0)       ; 24576       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|FIFORam:Ram                                                                                                                       ; work         ;
-;       |scfifo:scfifo_component|                   ; 60 (0)            ; 48 (0)       ; 24576       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|FIFORam:Ram|scfifo:scfifo_component                                                                                               ; work         ;
-;          |scfifo_bk41:auto_generated|             ; 60 (0)            ; 48 (0)       ; 24576       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated                                                                    ; work         ;
-;             |a_dpfifo_ub41:dpfifo|                ; 60 (28)           ; 48 (16)      ; 24576       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo                                               ; work         ;
-;                |altsyncram_p7e1:FIFOram|          ; 0 (0)             ; 0 (0)        ; 24576       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|altsyncram_p7e1:FIFOram                       ; work         ;
-;                |cntr_cpb:rd_ptr_msb|              ; 10 (10)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|cntr_cpb:rd_ptr_msb                           ; work         ;
-;                |cntr_dpb:wr_ptr|                  ; 11 (11)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|cntr_dpb:wr_ptr                               ; work         ;
-;                |cntr_pp7:usedw_counter|           ; 11 (11)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|cntr_pp7:usedw_counter                        ; work         ;
-;    |Pool:Pool1|                                   ; 1409 (1019)       ; 951 (713)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:Pool1                                                                                                                        ; work         ;
-;       |Divider:Div1|                              ; 374 (374)         ; 238 (238)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:Pool1|Divider:Div1                                                                                                           ; work         ;
-;       |lpm_mult:Mult1|                            ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:Pool1|lpm_mult:Mult1                                                                                                         ; work         ;
-;          |multcore:mult_core|                     ; 16 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:Pool1|lpm_mult:Mult1|multcore:mult_core                                                                                      ; work         ;
-;             |mpar_add:padder|                     ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:Pool1|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder                                                                      ; work         ;
-;                |lpm_add_sub:adder[0]|             ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:Pool1|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ; work         ;
-;                   |add_sub_bfh:auto_generated|    ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:Pool1|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_bfh:auto_generated                      ; work         ;
-;                |mpar_add:sub_par_add|             ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:Pool1|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ; work         ;
-;                   |lpm_add_sub:adder[0]|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:Pool1|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ; work         ;
-;                      |add_sub_mgh:auto_generated| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:Pool1|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_mgh:auto_generated ; work         ;
-;    |Ratio:Ratio1|                                 ; 5509 (5378)       ; 123 (41)     ; 84          ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Ratio:Ratio1                                                                                                                      ; work         ;
-;       |Divider2:Div2|                             ; 123 (123)         ; 79 (79)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Ratio:Ratio1|Divider2:Div2                                                                                                        ; work         ;
-;       |altshift_taps:store_ratio_rtl_0|           ; 8 (0)             ; 3 (0)        ; 84          ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Ratio:Ratio1|altshift_taps:store_ratio_rtl_0                                                                                      ; work         ;
-;          |shift_taps_rnm:auto_generated|          ; 8 (0)             ; 3 (0)        ; 84          ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Ratio:Ratio1|altshift_taps:store_ratio_rtl_0|shift_taps_rnm:auto_generated                                                        ; work         ;
-;             |altsyncram_4e81:altsyncram2|         ; 0 (0)             ; 0 (0)        ; 84          ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Ratio:Ratio1|altshift_taps:store_ratio_rtl_0|shift_taps_rnm:auto_generated|altsyncram_4e81:altsyncram2                            ; work         ;
-;             |cntr_bpf:cntr1|                      ; 8 (8)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Ratio:Ratio1|altshift_taps:store_ratio_rtl_0|shift_taps_rnm:auto_generated|cntr_bpf:cntr1                                         ; work         ;
-;    |Storage:Store1|                               ; 4 (4)             ; 1200 (1200)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Storage:Store1                                                                                                                    ; work         ;
-;    |Switch:Switch1|                               ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Switch:Switch1                                                                                                                    ; work         ;
+; |Raman                                            ; 8322 (1)          ; 2655 (0)     ; 24648       ; 4            ; 0       ; 2         ; 144  ; 0            ; |Raman                                                                                                                                   ; work         ;
+;    |Accumulation:inst3|                           ; 1078 (1064)       ; 290 (290)    ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |Raman|Accumulation:inst3                                                                                                                ; work         ;
+;       |lpm_mult:Mult0|                            ; 14 (0)            ; 0 (0)        ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |Raman|Accumulation:inst3|lpm_mult:Mult0                                                                                                 ; work         ;
+;          |mult_bft:auto_generated|                ; 14 (14)           ; 0 (0)        ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |Raman|Accumulation:inst3|lpm_mult:Mult0|mult_bft:auto_generated                                                                         ; work         ;
+;    |Action:inst2|                                 ; 59 (59)           ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Action:inst2                                                                                                                      ; work         ;
+;    |FIFORam:inst|                                 ; 60 (0)            ; 48 (0)       ; 24576       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|FIFORam:inst                                                                                                                      ; work         ;
+;       |scfifo:scfifo_component|                   ; 60 (0)            ; 48 (0)       ; 24576       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|FIFORam:inst|scfifo:scfifo_component                                                                                              ; work         ;
+;          |scfifo_bk41:auto_generated|             ; 60 (0)            ; 48 (0)       ; 24576       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated                                                                   ; work         ;
+;             |a_dpfifo_ub41:dpfifo|                ; 60 (28)           ; 48 (16)      ; 24576       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo                                              ; work         ;
+;                |altsyncram_p7e1:FIFOram|          ; 0 (0)             ; 0 (0)        ; 24576       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|altsyncram_p7e1:FIFOram                      ; work         ;
+;                |cntr_cpb:rd_ptr_msb|              ; 10 (10)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|cntr_cpb:rd_ptr_msb                          ; work         ;
+;                |cntr_dpb:wr_ptr|                  ; 11 (11)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|cntr_dpb:wr_ptr                              ; work         ;
+;                |cntr_pp7:usedw_counter|           ; 11 (11)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|cntr_pp7:usedw_counter                       ; work         ;
+;    |Pool:inst4|                                   ; 1606 (1214)       ; 951 (713)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:inst4                                                                                                                        ; work         ;
+;       |Divider:Div1|                              ; 376 (376)         ; 238 (238)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:inst4|Divider:Div1                                                                                                           ; work         ;
+;       |lpm_mult:Mult1|                            ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:inst4|lpm_mult:Mult1                                                                                                         ; work         ;
+;          |multcore:mult_core|                     ; 16 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:inst4|lpm_mult:Mult1|multcore:mult_core                                                                                      ; work         ;
+;             |mpar_add:padder|                     ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:inst4|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder                                                                      ; work         ;
+;                |lpm_add_sub:adder[0]|             ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:inst4|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ; work         ;
+;                   |add_sub_bfh:auto_generated|    ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:inst4|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_bfh:auto_generated                      ; work         ;
+;                |mpar_add:sub_par_add|             ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:inst4|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ; work         ;
+;                   |lpm_add_sub:adder[0]|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:inst4|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ; work         ;
+;                      |add_sub_mgh:auto_generated| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Pool:inst4|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_mgh:auto_generated ; work         ;
+;    |Ratio:inst6|                                  ; 5509 (5378)       ; 135 (53)     ; 72          ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Ratio:inst6                                                                                                                       ; work         ;
+;       |Divider2:Div2|                             ; 123 (123)         ; 79 (79)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Ratio:inst6|Divider2:Div2                                                                                                         ; work         ;
+;       |altshift_taps:store_ratio_rtl_0|           ; 8 (0)             ; 3 (0)        ; 72          ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Ratio:inst6|altshift_taps:store_ratio_rtl_0                                                                                       ; work         ;
+;          |shift_taps_vnm:auto_generated|          ; 8 (0)             ; 3 (0)        ; 72          ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Ratio:inst6|altshift_taps:store_ratio_rtl_0|shift_taps_vnm:auto_generated                                                         ; work         ;
+;             |altsyncram_2e81:altsyncram2|         ; 0 (0)             ; 0 (0)        ; 72          ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Ratio:inst6|altshift_taps:store_ratio_rtl_0|shift_taps_vnm:auto_generated|altsyncram_2e81:altsyncram2                             ; work         ;
+;             |cntr_apf:cntr1|                      ; 8 (8)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Ratio:inst6|altshift_taps:store_ratio_rtl_0|shift_taps_vnm:auto_generated|cntr_apf:cntr1                                          ; work         ;
+;    |Storage:inst5|                                ; 7 (7)             ; 1200 (1200)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Storage:inst5                                                                                                                     ; work         ;
+;    |Switch:inst7|                                 ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Raman|Switch:inst7                                                                                                                      ; work         ;
 +---------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                            ;
-+------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
-; Name                                                                                                                   ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF  ;
-+------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
-; FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|altsyncram_p7e1:FIFOram|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 2048         ; 12           ; 2048         ; 12           ; 24576 ; None ;
-; Ratio:Ratio1|altshift_taps:store_ratio_rtl_0|shift_taps_rnm:auto_generated|altsyncram_4e81:altsyncram2|ALTSYNCRAM      ; AUTO ; Simple Dual Port ; 7            ; 12           ; 7            ; 12           ; 84    ; None ;
-+------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                             ;
++-------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
+; Name                                                                                                                    ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF  ;
++-------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
+; FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|altsyncram_p7e1:FIFOram|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 2048         ; 12           ; 2048         ; 12           ; 24576 ; None ;
+; Ratio:inst6|altshift_taps:store_ratio_rtl_0|shift_taps_vnm:auto_generated|altsyncram_2e81:altsyncram2|ALTSYNCRAM        ; AUTO ; Simple Dual Port ; 6            ; 12           ; 6            ; 12           ; 72    ; None ;
++-------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
 
 
 +-----------------------------------------------------+
@@ -356,13 +353,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                           ;
-+--------+--------------+---------+--------------+--------------+--------------------+----------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance    ; IP Include File            ;
-+--------+--------------+---------+--------------+--------------+--------------------+----------------------------+
-; Altera ; FIFO         ; 13.1    ; N/A          ; N/A          ; |Raman|FIFORam:Ram ; D:/Quartus/Raman/FIFORam.v ;
-+--------+--------------+---------+--------------+--------------+--------------------+----------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                            ;
++--------+--------------+---------+--------------+--------------+---------------------+----------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance     ; IP Include File            ;
++--------+--------------+---------+--------------+--------------+---------------------+----------------------------+
+; Altera ; FIFO         ; 13.1    ; N/A          ; N/A          ; |Raman|FIFORam:inst ; D:/Quartus/Raman/FIFORam.v ;
++--------+--------------+---------+--------------+--------------+---------------------+----------------------------+
 
 
 +----------------------------------------------------------------------------------------+
@@ -370,99 +367,99 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +-----------------------------------------------+----------------------------------------+
 ; Register name                                 ; Reason for Removal                     ;
 +-----------------------------------------------+----------------------------------------+
-; Ratio:Ratio1|Divider2:Div2|divider_copy[39]   ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divident_copy[39]  ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[127]     ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divident_copy[127]    ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[38]   ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[126]     ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[37]   ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[125]     ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[36]   ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[124]     ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[35]   ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[123]     ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[34]   ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[122]     ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[33]   ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[121]     ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[32]   ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[120]     ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[31]   ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[119]     ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[30]   ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[118]     ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[29]   ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[117]     ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[28]   ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[116]     ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[27]   ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[115]     ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[26]   ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[114]     ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[25]   ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[113]     ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[24]   ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[112]     ; Stuck at GND due to stuck port data_in ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[23]   ; Stuck at GND due to stuck port data_in ;
-; Pool:Pool1|Divider:Div1|divider_copy[92..111] ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[39]    ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divident_copy[39]   ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[127]     ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divident_copy[127]    ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[38]    ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[126]     ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[37]    ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[125]     ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[36]    ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[124]     ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[35]    ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[123]     ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[34]    ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[122]     ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[33]    ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[121]     ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[32]    ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[120]     ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[31]    ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[119]     ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[30]    ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[118]     ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[29]    ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[117]     ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[28]    ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[116]     ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[27]    ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[115]     ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[26]    ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[114]     ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[25]    ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[113]     ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[24]    ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[112]     ; Stuck at GND due to stuck port data_in ;
+; Ratio:inst6|Divider2:Div2|divider_copy[23]    ; Stuck at GND due to stuck port data_in ;
+; Pool:inst4|Divider:Div1|divider_copy[92..111] ; Stuck at GND due to stuck port data_in ;
 ; Total Number of Removed Registers = 55        ;                                        ;
 +-----------------------------------------------+----------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                   ;
-+---------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
-; Register name                               ; Reason for Removal        ; Registers Removed due to This Register                                              ;
-+---------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
-; Pool:Pool1|Divider:Div1|divider_copy[127]   ; Stuck at GND              ; Pool:Pool1|Divider:Div1|divider_copy[126],                                          ;
-;                                             ; due to stuck port data_in ; Pool:Pool1|Divider:Div1|divider_copy[125],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[124],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[123],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[122],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[121],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[120],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[119],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[118],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[117],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[116],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[115],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[114],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[113],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[112],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[111],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[110],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[109],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[108],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[107],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[106],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[105],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[104],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[103],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[102],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[101],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[100],                                          ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[99], Pool:Pool1|Divider:Div1|divider_copy[98], ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[97], Pool:Pool1|Divider:Div1|divider_copy[96], ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[95], Pool:Pool1|Divider:Div1|divider_copy[94], ;
-;                                             ;                           ; Pool:Pool1|Divider:Div1|divider_copy[93], Pool:Pool1|Divider:Div1|divider_copy[92]  ;
-; Ratio:Ratio1|Divider2:Div2|divider_copy[39] ; Stuck at GND              ; Ratio:Ratio1|Divider2:Div2|divider_copy[38],                                        ;
-;                                             ; due to stuck port data_in ; Ratio:Ratio1|Divider2:Div2|divider_copy[37],                                        ;
-;                                             ;                           ; Ratio:Ratio1|Divider2:Div2|divider_copy[36],                                        ;
-;                                             ;                           ; Ratio:Ratio1|Divider2:Div2|divider_copy[35],                                        ;
-;                                             ;                           ; Ratio:Ratio1|Divider2:Div2|divider_copy[34],                                        ;
-;                                             ;                           ; Ratio:Ratio1|Divider2:Div2|divider_copy[33],                                        ;
-;                                             ;                           ; Ratio:Ratio1|Divider2:Div2|divider_copy[32],                                        ;
-;                                             ;                           ; Ratio:Ratio1|Divider2:Div2|divider_copy[31],                                        ;
-;                                             ;                           ; Ratio:Ratio1|Divider2:Div2|divider_copy[30],                                        ;
-;                                             ;                           ; Ratio:Ratio1|Divider2:Div2|divider_copy[29],                                        ;
-;                                             ;                           ; Ratio:Ratio1|Divider2:Div2|divider_copy[28],                                        ;
-;                                             ;                           ; Ratio:Ratio1|Divider2:Div2|divider_copy[27],                                        ;
-;                                             ;                           ; Ratio:Ratio1|Divider2:Div2|divider_copy[26],                                        ;
-;                                             ;                           ; Ratio:Ratio1|Divider2:Div2|divider_copy[25],                                        ;
-;                                             ;                           ; Ratio:Ratio1|Divider2:Div2|divider_copy[24],                                        ;
-;                                             ;                           ; Ratio:Ratio1|Divider2:Div2|divider_copy[23]                                         ;
-+---------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                  ;
++--------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name                              ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++--------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Pool:inst4|Divider:Div1|divider_copy[127]  ; Stuck at GND              ; Pool:inst4|Divider:Div1|divider_copy[126],                                          ;
+;                                            ; due to stuck port data_in ; Pool:inst4|Divider:Div1|divider_copy[125],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[124],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[123],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[122],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[121],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[120],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[119],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[118],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[117],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[116],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[115],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[114],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[113],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[112],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[111],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[110],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[109],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[108],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[107],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[106],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[105],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[104],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[103],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[102],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[101],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[100],                                          ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[99], Pool:inst4|Divider:Div1|divider_copy[98], ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[97], Pool:inst4|Divider:Div1|divider_copy[96], ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[95], Pool:inst4|Divider:Div1|divider_copy[94], ;
+;                                            ;                           ; Pool:inst4|Divider:Div1|divider_copy[93], Pool:inst4|Divider:Div1|divider_copy[92]  ;
+; Ratio:inst6|Divider2:Div2|divider_copy[39] ; Stuck at GND              ; Ratio:inst6|Divider2:Div2|divider_copy[38],                                         ;
+;                                            ; due to stuck port data_in ; Ratio:inst6|Divider2:Div2|divider_copy[37],                                         ;
+;                                            ;                           ; Ratio:inst6|Divider2:Div2|divider_copy[36],                                         ;
+;                                            ;                           ; Ratio:inst6|Divider2:Div2|divider_copy[35],                                         ;
+;                                            ;                           ; Ratio:inst6|Divider2:Div2|divider_copy[34],                                         ;
+;                                            ;                           ; Ratio:inst6|Divider2:Div2|divider_copy[33],                                         ;
+;                                            ;                           ; Ratio:inst6|Divider2:Div2|divider_copy[32],                                         ;
+;                                            ;                           ; Ratio:inst6|Divider2:Div2|divider_copy[31],                                         ;
+;                                            ;                           ; Ratio:inst6|Divider2:Div2|divider_copy[30],                                         ;
+;                                            ;                           ; Ratio:inst6|Divider2:Div2|divider_copy[29],                                         ;
+;                                            ;                           ; Ratio:inst6|Divider2:Div2|divider_copy[28],                                         ;
+;                                            ;                           ; Ratio:inst6|Divider2:Div2|divider_copy[27],                                         ;
+;                                            ;                           ; Ratio:inst6|Divider2:Div2|divider_copy[26],                                         ;
+;                                            ;                           ; Ratio:inst6|Divider2:Div2|divider_copy[25],                                         ;
+;                                            ;                           ; Ratio:inst6|Divider2:Div2|divider_copy[24],                                         ;
+;                                            ;                           ; Ratio:inst6|Divider2:Div2|divider_copy[23]                                          ;
++--------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -470,12 +467,12 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2647  ;
+; Total registers                              ; 2655  ;
 ; Number of registers using Synchronous Clear  ; 22    ;
 ; Number of registers using Synchronous Load   ; 68    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2591  ;
+; Number of registers using Clock Enable       ; 2603  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -485,231 +482,164 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; Action:FirstAction|cnt_measure[0]      ; 5       ;
-; Action:FirstAction|cnt_measure[1]      ; 5       ;
-; Action:FirstAction|cnt_measure[5]      ; 6       ;
-; Action:FirstAction|cnt_measure[6]      ; 6       ;
-; Action:FirstAction|cnt_save[0]         ; 5       ;
-; Action:FirstAction|cnt_save[3]         ; 4       ;
-; Pool:Pool1|antistokes[0]               ; 1       ;
-; Pool:Pool1|stokes[0]                   ; 1       ;
-; Accumulation:Accum1|summary[0]         ; 4       ;
-; Total number of inverted registers = 9 ;         ;
+; Action:inst2|cnt_measure[6]            ; 6       ;
+; Action:inst2|cnt_measure[5]            ; 6       ;
+; Action:inst2|cnt_measure[1]            ; 3       ;
+; Action:inst2|cnt_measure[0]            ; 5       ;
+; Accumulation:inst3|summary[0]          ; 4       ;
+; Total number of inverted registers = 5 ;         ;
 +----------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------+
-; Registers Packed Into Inferred Megafunctions                                    ;
-+-----------------------------------+--------------------------------+------------+
-; Register Name                     ; Megafunction                   ; Type       ;
-+-----------------------------------+--------------------------------+------------+
-; Ratio:Ratio1|store_ratio[12..119] ; Ratio:Ratio1|store_ratio_rtl_0 ; SHIFT_TAPS ;
-+-----------------------------------+--------------------------------+------------+
++-------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                  ;
++----------------------------------+-------------------------------+------------+
+; Register Name                    ; Megafunction                  ; Type       ;
++----------------------------------+-------------------------------+------------+
+; Ratio:inst6|store_ratio[24..119] ; Ratio:inst6|store_ratio_rtl_0 ; SHIFT_TAPS ;
++----------------------------------+-------------------------------+------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; 3:1                ; 289 bits  ; 578 LEs       ; 289 LEs              ; 289 LEs                ; Yes        ; |Raman|Accumulation:Accum1|summary[114]             ;
-; 3:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |Raman|Action:FirstAction|cnt_measure[2]            ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Raman|Action:FirstAction|cnt_save[1]               ;
-; 3:1                ; 120 bits  ; 240 LEs       ; 120 LEs              ; 120 LEs                ; Yes        ; |Raman|Pool:Pool1|storereg[104]                     ;
-; 3:1                ; 82 bits   ; 164 LEs       ; 82 LEs               ; 82 LEs                 ; Yes        ; |Raman|Pool:Pool1|Divider:Div1|divider_copy[45]     ;
-; 3:1                ; 39 bits   ; 78 LEs        ; 39 LEs               ; 39 LEs                 ; Yes        ; |Raman|Ratio:Ratio1|Divider2:Div2|cnt[1]            ;
-; 4:1                ; 27 bits   ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; Yes        ; |Raman|Pool:Pool1|Divider:Div1|divider_copy[81]     ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |Raman|Pool:Pool1|cnt_div[4]                        ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |Raman|Ratio:Ratio1|cnt_ratio[1]                    ;
-; 4:1                ; 23 bits   ; 46 LEs        ; 23 LEs               ; 23 LEs                 ; Yes        ; |Raman|Ratio:Ratio1|Divider2:Div2|divident_copy[17] ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Raman|Ratio:Ratio1|Divider2:Div2|divident_copy[14] ;
-; 4:1                ; 98 bits   ; 196 LEs       ; 98 LEs               ; 98 LEs                 ; Yes        ; |Raman|Pool:Pool1|Divider:Div1|divident_copy[2]     ;
-; 5:1                ; 27 bits   ; 81 LEs        ; 54 LEs               ; 27 LEs                 ; Yes        ; |Raman|Pool:Pool1|Divider:Div1|divident_copy[31]    ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Raman|Action:FirstAction|cnt_measure[6]            ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Raman|Action:FirstAction|cnt_save[3]               ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux114                          ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux114                          ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux99                           ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux114                          ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux112                          ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux32                           ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux34                           ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux109                          ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux113                          ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux102                          ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux112                          ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux113                          ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux102                          ;
-; 3:1                ; 64 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux113                          ;
-; 3:1                ; 64 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux103                          ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; No         ; |Raman|Ratio:Ratio1|Mux105                          ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux119                          ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux107                          ;
-; 3:1                ; 23 bits   ; 46 LEs        ; 23 LEs               ; 23 LEs                 ; No         ; |Raman|Accumulation:Accum1|ShiftLeft0               ;
-; 3:1                ; 34 bits   ; 68 LEs        ; 34 LEs               ; 34 LEs                 ; No         ; |Raman|Accumulation:Accum1|ShiftLeft0               ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux100                          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux100                          ;
-; 4:1                ; 136 bits  ; 272 LEs       ; 272 LEs              ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux114                          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux32                           ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux33                           ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux35                           ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux47                           ;
-; 4:1                ; 36 bits   ; 72 LEs        ; 72 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux119                          ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux112                          ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux105                          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux117                          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux32                           ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux82                           ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux102                          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux101                          ;
-; 4:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux103                          ;
-; 4:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux102                          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux106                          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux105                          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux107                          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux105                          ;
-; 4:1                ; 117 bits  ; 234 LEs       ; 117 LEs              ; 117 LEs                ; No         ; |Raman|Accumulation:Accum1|ShiftLeft0               ;
-; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |Raman|Accumulation:Accum1|ShiftLeft0               ;
-; 4:1                ; 94 bits   ; 188 LEs       ; 94 LEs               ; 94 LEs                 ; No         ; |Raman|Accumulation:Accum1|ShiftLeft0               ;
-; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |Raman|Accumulation:Accum1|ShiftLeft0               ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux46                           ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux115                          ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux114                          ;
-; 5:1                ; 20 bits   ; 60 LEs        ; 40 LEs               ; 20 LEs                 ; No         ; |Raman|Ratio:Ratio1|Mux84                           ;
-; 5:1                ; 20 bits   ; 60 LEs        ; 40 LEs               ; 20 LEs                 ; No         ; |Raman|Ratio:Ratio1|Mux80                           ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux23                           ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux99                           ;
-; 5:1                ; 24 bits   ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; No         ; |Raman|Pool:Pool1|Mux29                             ;
-; 6:1                ; 16 bits   ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; No         ; |Raman|Pool:Pool1|Mux0                              ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux113                          ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux112                          ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux66                           ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux43                           ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux89                           ;
-; 7:1                ; 24 bits   ; 96 LEs        ; 72 LEs               ; 24 LEs                 ; No         ; |Raman|Pool:Pool1|Mux29                             ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Raman|Pool:Pool1|Mux29                             ;
-; 7:1                ; 56 bits   ; 224 LEs       ; 224 LEs              ; 0 LEs                  ; No         ; |Raman|Pool:Pool1|Mux29                             ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux56                           ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux73                           ;
-; 8:1                ; 12 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux104                          ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux98                           ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux23                           ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 64 LEs               ; 16 LEs                 ; No         ; |Raman|Pool:Pool1|Mux0                              ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |Raman|Pool:Pool1|Mux29                             ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 28 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux31                           ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 28 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux55                           ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 28 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux77                           ;
-; 10:1               ; 4 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux104                          ;
-; 10:1               ; 4 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux15                           ;
-; 10:1               ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux1                            ;
-; 9:1                ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; No         ; |Raman|Pool:Pool1|Mux0                              ;
-; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |Raman|Pool:Pool1|Mux0                              ;
-; 10:1               ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux58                           ;
-; 10:1               ; 4 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux81                           ;
-; 10:1               ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux33                           ;
-; 10:1               ; 4 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; No         ; |Raman|Pool:Pool1|Mux0                              ;
-; 12:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux119                          ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |Raman|Pool:Pool1|Mux0                              ;
-; 12:1               ; 4 bits    ; 32 LEs        ; 28 LEs               ; 4 LEs                  ; No         ; |Raman|Pool:Pool1|Mux0                              ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux47                           ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux114                          ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux114                          ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 28 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux94                           ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux25                           ;
-; 14:1               ; 4 bits    ; 36 LEs        ; 28 LEs               ; 8 LEs                  ; No         ; |Raman|Pool:Pool1|Mux29                             ;
-; 18:1               ; 4 bits    ; 48 LEs        ; 40 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux80                           ;
-; 18:1               ; 4 bits    ; 48 LEs        ; 40 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux35                           ;
-; 23:1               ; 4 bits    ; 60 LEs        ; 56 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux56                           ;
-; 23:1               ; 4 bits    ; 60 LEs        ; 56 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux47                           ;
-; 23:1               ; 4 bits    ; 60 LEs        ; 56 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux75                           ;
-; 28:1               ; 4 bits    ; 72 LEs        ; 64 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux100                          ;
-; 28:1               ; 4 bits    ; 72 LEs        ; 64 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux4                            ;
-; 28:1               ; 4 bits    ; 72 LEs        ; 64 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux115                          ;
-; 29:1               ; 4 bits    ; 76 LEs        ; 68 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:Ratio1|Mux18                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; 3:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |Raman|Action:inst2|cnt_measure[15]                ;
+; 3:1                ; 120 bits  ; 240 LEs       ; 120 LEs              ; 120 LEs                ; Yes        ; |Raman|Pool:inst4|storereg[1]                      ;
+; 3:1                ; 289 bits  ; 578 LEs       ; 289 LEs              ; 289 LEs                ; Yes        ; |Raman|Accumulation:inst3|summary[255]             ;
+; 3:1                ; 82 bits   ; 164 LEs       ; 82 LEs               ; 82 LEs                 ; Yes        ; |Raman|Pool:inst4|Divider:Div1|cnt[2]              ;
+; 3:1                ; 39 bits   ; 78 LEs        ; 39 LEs               ; 39 LEs                 ; Yes        ; |Raman|Ratio:inst6|Divider2:Div2|divider_copy[18]  ;
+; 4:1                ; 27 bits   ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; Yes        ; |Raman|Pool:inst4|Divider:Div1|divider_copy[78]    ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |Raman|Pool:inst4|cnt_div[5]                       ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |Raman|Ratio:inst6|cnt_ratio[6]                    ;
+; 4:1                ; 23 bits   ; 46 LEs        ; 23 LEs               ; 23 LEs                 ; Yes        ; |Raman|Ratio:inst6|Divider2:Div2|divident_copy[38] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Raman|Ratio:inst6|Divider2:Div2|divident_copy[14] ;
+; 4:1                ; 98 bits   ; 196 LEs       ; 98 LEs               ; 98 LEs                 ; Yes        ; |Raman|Pool:inst4|Divider:Div1|divident_copy[46]   ;
+; 5:1                ; 27 bits   ; 81 LEs        ; 54 LEs               ; 27 LEs                 ; Yes        ; |Raman|Pool:inst4|Divider:Div1|divident_copy[22]   ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Raman|Action:inst2|cnt_measure[6]                 ;
+; 3:1                ; 23 bits   ; 46 LEs        ; 23 LEs               ; 23 LEs                 ; No         ; |Raman|Accumulation:inst3|ShiftLeft0               ;
+; 3:1                ; 34 bits   ; 68 LEs        ; 34 LEs               ; 34 LEs                 ; No         ; |Raman|Accumulation:inst3|ShiftLeft0               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux115                          ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux113                          ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux96                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux115                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux114                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux34                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux32                           ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux9                            ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |Raman|Ratio:inst6|Mux113                          ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux101                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux113                          ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux112                          ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux102                          ;
+; 3:1                ; 64 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux103                          ;
+; 3:1                ; 64 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux103                          ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; No         ; |Raman|Ratio:inst6|Mux106                          ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux119                          ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux107                          ;
+; 4:1                ; 117 bits  ; 234 LEs       ; 117 LEs              ; 117 LEs                ; No         ; |Raman|Accumulation:inst3|ShiftLeft0               ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |Raman|Accumulation:inst3|ShiftLeft0               ;
+; 4:1                ; 94 bits   ; 188 LEs       ; 94 LEs               ; 94 LEs                 ; No         ; |Raman|Accumulation:inst3|ShiftLeft0               ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |Raman|Accumulation:inst3|ShiftLeft0               ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux103                          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux103                          ;
+; 4:1                ; 136 bits  ; 272 LEs       ; 272 LEs              ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux114                          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux32                           ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux32                           ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux32                           ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux75                           ;
+; 4:1                ; 36 bits   ; 72 LEs        ; 72 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux106                          ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux115                          ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux106                          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux118                          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux35                           ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux83                           ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux101                          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux101                          ;
+; 4:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux100                          ;
+; 4:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux101                          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux104                          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux105                          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux105                          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux105                          ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux45                           ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux115                          ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux113                          ;
+; 5:1                ; 20 bits   ; 60 LEs        ; 40 LEs               ; 20 LEs                 ; No         ; |Raman|Ratio:inst6|Mux61                           ;
+; 5:1                ; 20 bits   ; 60 LEs        ; 40 LEs               ; 20 LEs                 ; No         ; |Raman|Ratio:inst6|Mux46                           ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux20                           ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux98                           ;
+; 5:1                ; 24 bits   ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; No         ; |Raman|Pool:inst4|Mux29                            ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; No         ; |Raman|Pool:inst4|Mux29                            ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux112                          ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux112                          ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:inst6|Mux66                           ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:inst6|Mux41                           ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:inst6|Mux90                           ;
+; 7:1                ; 24 bits   ; 96 LEs        ; 72 LEs               ; 24 LEs                 ; No         ; |Raman|Pool:inst4|Mux0                             ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Raman|Pool:inst4|Mux0                             ;
+; 7:1                ; 56 bits   ; 224 LEs       ; 224 LEs              ; 0 LEs                  ; No         ; |Raman|Pool:inst4|Mux0                             ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:inst6|Mux57                           ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux72                           ;
+; 8:1                ; 12 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux106                          ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:inst6|Mux96                           ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:inst6|Mux22                           ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 64 LEs               ; 16 LEs                 ; No         ; |Raman|Pool:inst4|Mux29                            ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |Raman|Pool:inst4|Mux29                            ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 28 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:inst6|Mux29                           ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 28 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:inst6|Mux53                           ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 28 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:inst6|Mux76                           ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:inst6|Mux106                          ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:inst6|Mux14                           ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux0                            ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; No         ; |Raman|Pool:inst4|Mux29                            ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |Raman|Pool:inst4|Mux29                            ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux74                           ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:inst6|Mux82                           ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux35                           ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; No         ; |Raman|Pool:inst4|Mux29                            ;
+; 12:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:inst6|Mux117                          ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |Raman|Pool:inst4|Mux29                            ;
+; 12:1               ; 4 bits    ; 32 LEs        ; 28 LEs               ; 4 LEs                  ; No         ; |Raman|Pool:inst4|Mux0                             ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux47                           ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux113                          ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Raman|Ratio:inst6|Mux115                          ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 28 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:inst6|Mux92                           ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:inst6|Mux26                           ;
+; 14:1               ; 4 bits    ; 36 LEs        ; 28 LEs               ; 8 LEs                  ; No         ; |Raman|Pool:inst4|Mux0                             ;
+; 18:1               ; 4 bits    ; 48 LEs        ; 40 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:inst6|Mux80                           ;
+; 18:1               ; 4 bits    ; 48 LEs        ; 40 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:inst6|Mux33                           ;
+; 23:1               ; 4 bits    ; 60 LEs        ; 56 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:inst6|Mux59                           ;
+; 23:1               ; 4 bits    ; 60 LEs        ; 56 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:inst6|Mux44                           ;
+; 23:1               ; 4 bits    ; 60 LEs        ; 56 LEs               ; 4 LEs                  ; No         ; |Raman|Ratio:inst6|Mux74                           ;
+; 28:1               ; 4 bits    ; 72 LEs        ; 64 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:inst6|Mux103                          ;
+; 28:1               ; 4 bits    ; 72 LEs        ; 64 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:inst6|Mux7                            ;
+; 28:1               ; 4 bits    ; 72 LEs        ; 64 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:inst6|Mux114                          ;
+; 29:1               ; 4 bits    ; 76 LEs        ; 68 LEs               ; 8 LEs                  ; No         ; |Raman|Ratio:inst6|Mux16                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|altsyncram_p7e1:FIFOram ;
-+---------------------------------+--------------------+------+----------------------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                                   ;
-+---------------------------------+--------------------+------+----------------------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                    ;
-+---------------------------------+--------------------+------+----------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|altsyncram_p7e1:FIFOram ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                    ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                     ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for Ratio:Ratio1|altshift_taps:store_ratio_rtl_0|shift_taps_rnm:auto_generated|altsyncram_4e81:altsyncram2 ;
-+---------------------------------+--------------------+------+-----------------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                              ;
-+---------------------------------+--------------------+------+-----------------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                               ;
-+---------------------------------+--------------------+------+-----------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |Raman ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; POINTS         ; 10    ; Signed Integer                               ;
-; MEASURES       ; 100   ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Action:FirstAction ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; POINTS         ; 10    ; Signed Integer                         ;
-; MEASURES       ; 100   ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIFORam:Ram|scfifo:scfifo_component ;
-+-------------------------+--------------+-----------------------------------------+
-; Parameter Name          ; Value        ; Type                                    ;
-+-------------------------+--------------+-----------------------------------------+
-; AUTO_CARRY_CHAINS       ; ON           ; AUTO_CARRY                              ;
-; IGNORE_CARRY_BUFFERS    ; OFF          ; IGNORE_CARRY                            ;
-; AUTO_CASCADE_CHAINS     ; ON           ; AUTO_CASCADE                            ;
-; IGNORE_CASCADE_BUFFERS  ; OFF          ; IGNORE_CASCADE                          ;
-; lpm_width               ; 12           ; Signed Integer                          ;
-; LPM_NUMWORDS            ; 2048         ; Signed Integer                          ;
-; LPM_WIDTHU              ; 11           ; Signed Integer                          ;
-; LPM_SHOWAHEAD           ; OFF          ; Untyped                                 ;
-; UNDERFLOW_CHECKING      ; ON           ; Untyped                                 ;
-; OVERFLOW_CHECKING       ; ON           ; Untyped                                 ;
-; ALLOW_RWCYCLE_WHEN_FULL ; OFF          ; Untyped                                 ;
-; ADD_RAM_OUTPUT_REGISTER ; ON           ; Untyped                                 ;
-; ALMOST_FULL_VALUE       ; 0            ; Untyped                                 ;
-; ALMOST_EMPTY_VALUE      ; 0            ; Untyped                                 ;
-; USE_EAB                 ; ON           ; Untyped                                 ;
-; MAXIMIZE_SPEED          ; 5            ; Untyped                                 ;
-; DEVICE_FAMILY           ; Cyclone IV E ; Untyped                                 ;
-; OPTIMIZE_FOR_SPEED      ; 5            ; Untyped                                 ;
-; CBXI_PARAMETER          ; scfifo_bk41  ; Untyped                                 ;
-+-------------------------+--------------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Accumulation:Accum1 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; POINTS         ; 10    ; Signed Integer                          ;
-; MEASURES       ; 100   ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Ratio:inst6|altshift_taps:store_ratio_rtl_0|shift_taps_vnm:auto_generated|altsyncram_2e81:altsyncram2 ;
++---------------------------------+--------------------+------+----------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                             ;
++---------------------------------+--------------------+------+----------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                              ;
++---------------------------------+--------------------+------+----------------------------------------------------------------+
 
 
 +---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Pool:Pool1 ;
+; Parameter Settings for User Entity Instance: Pool:inst4 ;
 +----------------+-------+--------------------------------+
 ; Parameter Name ; Value ; Type                           ;
 +----------------+-------+--------------------------------+
@@ -720,7 +650,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Pool:Pool1|Divider:Div1 ;
+; Parameter Settings for User Entity Instance: Pool:inst4|Divider:Div1 ;
 +----------------+-------+---------------------------------------------+
 ; Parameter Name ; Value ; Type                                        ;
 +----------------+-------+---------------------------------------------+
@@ -729,19 +659,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Storage:Store1 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; POINTS         ; 10    ; Signed Integer                     ;
-; MEASURES       ; 100   ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Ratio:Ratio1 ;
+; Parameter Settings for User Entity Instance: Switch:inst7 ;
 +----------------+-------+----------------------------------+
 ; Parameter Name ; Value ; Type                             ;
 +----------------+-------+----------------------------------+
@@ -751,79 +670,105 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Ratio:Ratio1|Divider2:Div2 ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; N              ; 20    ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Action:inst2 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; POINTS         ; 10    ; Signed Integer                   ;
+; MEASURES       ; 100   ; Signed Integer                   ;
++----------------+-------+----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Switch:Switch1 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; POINTS         ; 10    ; Signed Integer                     ;
-; MEASURES       ; 100   ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Accumulation:inst3 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; POINTS         ; 10    ; Signed Integer                         ;
+; MEASURES       ; 100   ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Ratio:Ratio1|altshift_taps:store_ratio_rtl_0 ;
-+----------------+----------------+-------------------------------------------------------------+
-; Parameter Name ; Value          ; Type                                                        ;
-+----------------+----------------+-------------------------------------------------------------+
-; WIDTH_BYTEENA  ; 1              ; Untyped                                                     ;
-; NUMBER_OF_TAPS ; 1              ; Untyped                                                     ;
-; TAP_DISTANCE   ; 9              ; Untyped                                                     ;
-; WIDTH          ; 12             ; Untyped                                                     ;
-; POWER_UP_STATE ; CLEARED        ; Untyped                                                     ;
-; CBXI_PARAMETER ; shift_taps_rnm ; Untyped                                                     ;
-+----------------+----------------+-------------------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIFORam:inst|scfifo:scfifo_component ;
++-------------------------+--------------+------------------------------------------+
+; Parameter Name          ; Value        ; Type                                     ;
++-------------------------+--------------+------------------------------------------+
+; AUTO_CARRY_CHAINS       ; ON           ; AUTO_CARRY                               ;
+; IGNORE_CARRY_BUFFERS    ; OFF          ; IGNORE_CARRY                             ;
+; AUTO_CASCADE_CHAINS     ; ON           ; AUTO_CASCADE                             ;
+; IGNORE_CASCADE_BUFFERS  ; OFF          ; IGNORE_CASCADE                           ;
+; lpm_width               ; 12           ; Signed Integer                           ;
+; LPM_NUMWORDS            ; 2048         ; Signed Integer                           ;
+; LPM_WIDTHU              ; 11           ; Signed Integer                           ;
+; LPM_SHOWAHEAD           ; OFF          ; Untyped                                  ;
+; UNDERFLOW_CHECKING      ; ON           ; Untyped                                  ;
+; OVERFLOW_CHECKING       ; ON           ; Untyped                                  ;
+; ALLOW_RWCYCLE_WHEN_FULL ; OFF          ; Untyped                                  ;
+; ADD_RAM_OUTPUT_REGISTER ; ON           ; Untyped                                  ;
+; ALMOST_FULL_VALUE       ; 0            ; Untyped                                  ;
+; ALMOST_EMPTY_VALUE      ; 0            ; Untyped                                  ;
+; USE_EAB                 ; ON           ; Untyped                                  ;
+; MAXIMIZE_SPEED          ; 5            ; Untyped                                  ;
+; DEVICE_FAMILY           ; Cyclone IV E ; Untyped                                  ;
+; OPTIMIZE_FOR_SPEED      ; 5            ; Untyped                                  ;
+; CBXI_PARAMETER          ; scfifo_bk41  ; Untyped                                  ;
++-------------------------+--------------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Ratio:inst6 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; POINTS         ; 10    ; Signed Integer                  ;
+; MEASURES       ; 100   ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Ratio:inst6|Divider2:Div2 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; N              ; 20    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Storage:inst5 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; POINTS         ; 10    ; Signed Integer                    ;
+; MEASURES       ; 100   ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Ratio:inst6|altshift_taps:store_ratio_rtl_0 ;
++----------------+----------------+------------------------------------------------------------+
+; Parameter Name ; Value          ; Type                                                       ;
++----------------+----------------+------------------------------------------------------------+
+; WIDTH_BYTEENA  ; 1              ; Untyped                                                    ;
+; NUMBER_OF_TAPS ; 1              ; Untyped                                                    ;
+; TAP_DISTANCE   ; 8              ; Untyped                                                    ;
+; WIDTH          ; 12             ; Untyped                                                    ;
+; POWER_UP_STATE ; CLEARED        ; Untyped                                                    ;
+; CBXI_PARAMETER ; shift_taps_vnm ; Untyped                                                    ;
++----------------+----------------+------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Pool:Pool1|lpm_mult:Mult1          ;
-+------------------------------------------------+--------------+---------------------+
-; Parameter Name                                 ; Value        ; Type                ;
-+------------------------------------------------+--------------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 5            ; Untyped             ;
-; LPM_WIDTHB                                     ; 9            ; Untyped             ;
-; LPM_WIDTHP                                     ; 14           ; Untyped             ;
-; LPM_WIDTHR                                     ; 14           ; Untyped             ;
-; LPM_WIDTHS                                     ; 1            ; Untyped             ;
-; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped             ;
-; LPM_PIPELINE                                   ; 0            ; Untyped             ;
-; LATENCY                                        ; 0            ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; YES          ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
-; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
-; CBXI_PARAMETER                                 ; NOTHING      ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
-+------------------------------------------------+--------------+---------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Accumulation:Accum1|lpm_mult:Mult0 ;
+; Parameter Settings for Inferred Entity Instance: Accumulation:inst3|lpm_mult:Mult0  ;
 +------------------------------------------------+--------------+---------------------+
 ; Parameter Name                                 ; Value        ; Type                ;
 +------------------------------------------------+--------------+---------------------+
@@ -857,67 +802,102 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; scfifo Parameter Settings by Entity Instance                     ;
-+----------------------------+-------------------------------------+
-; Name                       ; Value                               ;
-+----------------------------+-------------------------------------+
-; Number of entity instances ; 1                                   ;
-; Entity Instance            ; FIFORam:Ram|scfifo:scfifo_component ;
-;     -- FIFO Type           ; Single Clock                        ;
-;     -- lpm_width           ; 12                                  ;
-;     -- LPM_NUMWORDS        ; 2048                                ;
-;     -- LPM_SHOWAHEAD       ; OFF                                 ;
-;     -- USE_EAB             ; ON                                  ;
-+----------------------------+-------------------------------------+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Pool:inst4|lpm_mult:Mult1          ;
++------------------------------------------------+--------------+---------------------+
+; Parameter Name                                 ; Value        ; Type                ;
++------------------------------------------------+--------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 5            ; Untyped             ;
+; LPM_WIDTHB                                     ; 9            ; Untyped             ;
+; LPM_WIDTHP                                     ; 14           ; Untyped             ;
+; LPM_WIDTHR                                     ; 14           ; Untyped             ;
+; LPM_WIDTHS                                     ; 1            ; Untyped             ;
+; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped             ;
+; LPM_PIPELINE                                   ; 0            ; Untyped             ;
+; LATENCY                                        ; 0            ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; YES          ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
+; USE_EAB                                        ; OFF          ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
+; CBXI_PARAMETER                                 ; NOTHING      ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
++------------------------------------------------+--------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; scfifo Parameter Settings by Entity Instance                      ;
++----------------------------+--------------------------------------+
+; Name                       ; Value                                ;
++----------------------------+--------------------------------------+
+; Number of entity instances ; 1                                    ;
+; Entity Instance            ; FIFORam:inst|scfifo:scfifo_component ;
+;     -- FIFO Type           ; Single Clock                         ;
+;     -- lpm_width           ; 12                                   ;
+;     -- LPM_NUMWORDS        ; 2048                                 ;
+;     -- LPM_SHOWAHEAD       ; OFF                                  ;
+;     -- USE_EAB             ; ON                                   ;
++----------------------------+--------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; altshift_taps Parameter Settings by Entity Instance                      ;
++----------------------------+---------------------------------------------+
+; Name                       ; Value                                       ;
++----------------------------+---------------------------------------------+
+; Number of entity instances ; 1                                           ;
+; Entity Instance            ; Ratio:inst6|altshift_taps:store_ratio_rtl_0 ;
+;     -- NUMBER_OF_TAPS      ; 1                                           ;
+;     -- TAP_DISTANCE        ; 8                                           ;
+;     -- WIDTH               ; 12                                          ;
++----------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------+
-; altshift_taps Parameter Settings by Entity Instance                       ;
-+----------------------------+----------------------------------------------+
-; Name                       ; Value                                        ;
-+----------------------------+----------------------------------------------+
-; Number of entity instances ; 1                                            ;
-; Entity Instance            ; Ratio:Ratio1|altshift_taps:store_ratio_rtl_0 ;
-;     -- NUMBER_OF_TAPS      ; 1                                            ;
-;     -- TAP_DISTANCE        ; 9                                            ;
-;     -- WIDTH               ; 12                                           ;
-+----------------------------+----------------------------------------------+
-
-
-+----------------------------------------------------------------------------+
-; lpm_mult Parameter Settings by Entity Instance                             ;
-+---------------------------------------+------------------------------------+
-; Name                                  ; Value                              ;
-+---------------------------------------+------------------------------------+
-; Number of entity instances            ; 2                                  ;
-; Entity Instance                       ; Pool:Pool1|lpm_mult:Mult1          ;
-;     -- LPM_WIDTHA                     ; 5                                  ;
-;     -- LPM_WIDTHB                     ; 9                                  ;
-;     -- LPM_WIDTHP                     ; 14                                 ;
-;     -- LPM_REPRESENTATION             ; UNSIGNED                           ;
-;     -- INPUT_A_IS_CONSTANT            ; YES                                ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                 ;
-;     -- USE_EAB                        ; OFF                                ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                               ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                 ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                 ;
-; Entity Instance                       ; Accumulation:Accum1|lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 5                                  ;
-;     -- LPM_WIDTHB                     ; 32                                 ;
-;     -- LPM_WIDTHP                     ; 37                                 ;
-;     -- LPM_REPRESENTATION             ; UNSIGNED                           ;
-;     -- INPUT_A_IS_CONSTANT            ; YES                                ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                 ;
-;     -- USE_EAB                        ; OFF                                ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                               ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                 ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                 ;
-+---------------------------------------+------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                            ;
++---------------------------------------+-----------------------------------+
+; Name                                  ; Value                             ;
++---------------------------------------+-----------------------------------+
+; Number of entity instances            ; 2                                 ;
+; Entity Instance                       ; Accumulation:inst3|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 5                                 ;
+;     -- LPM_WIDTHB                     ; 32                                ;
+;     -- LPM_WIDTHP                     ; 37                                ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                          ;
+;     -- INPUT_A_IS_CONSTANT            ; YES                               ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                ;
+;     -- USE_EAB                        ; OFF                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                ;
+; Entity Instance                       ; Pool:inst4|lpm_mult:Mult1         ;
+;     -- LPM_WIDTHA                     ; 5                                 ;
+;     -- LPM_WIDTHB                     ; 9                                 ;
+;     -- LPM_WIDTHP                     ; 14                                ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                          ;
+;     -- INPUT_A_IS_CONSTANT            ; YES                               ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                ;
+;     -- USE_EAB                        ; OFF                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                ;
++---------------------------------------+-----------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Ratio:Ratio1|Divider2:Div2"                                                                                                                 ;
+; Port Connectivity Checks: "Ratio:inst6|Divider2:Div2"                                                                                                                  ;
 +------------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
 ; Port             ; Type   ; Severity ; Details                                                                                                                         ;
 +------------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
@@ -932,18 +912,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Ratio:Ratio1"                                                                                 ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                             ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; ratio[107..12] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; quotient       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Pool:Pool1|Divider:Div1"                                                                                                                    ;
+; Port Connectivity Checks: "Pool:inst4|Divider:Div1"                                                                                                                    ;
 +------------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
 ; Port             ; Type   ; Severity ; Details                                                                                                                         ;
 +------------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
@@ -955,25 +925,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "FIFORam:Ram"                                                                                                                                  ;
-+-------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                                                                                      ;
-+-------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; aclr  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; sclr  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; empty ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; full  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; usedw ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-+-------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:27     ;
+; Top            ; 00:00:25     ;
 +----------------+--------------+
 
 
@@ -983,13 +940,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Mar 21 13:20:45 2018
+    Info: Processing started: Fri Mar 23 19:01:54 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Raman -c Raman
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file fiforam.v
     Info (12023): Found entity 1: FIFORam
-Info (12021): Found 1 design units, including 1 entities, in source file raman.v
-    Info (12023): Found entity 1: Raman
 Info (12021): Found 1 design units, including 1 entities, in source file action.v
     Info (12023): Found entity 1: Action
 Info (12021): Found 1 design units, including 1 entities, in source file accumulation.v
@@ -1007,16 +962,28 @@ Info (12021): Found 1 design units, including 1 entities, in source file ratio.v
     Info (12023): Found entity 1: Ratio
 Info (12021): Found 1 design units, including 1 entities, in source file divider2.v
     Info (12023): Found entity 1: Divider2
+Info (12021): Found 1 design units, including 1 entities, in source file testbenchram.v
+    Info (12023): Found entity 1: tbRam
+Info (12021): Found 1 design units, including 1 entities, in source file raman.bdf
+    Info (12023): Found entity 1: Raman
 Info (12127): Elaborating entity "Raman" for the top level hierarchy
-Info (12128): Elaborating entity "Action" for hierarchy "Action:FirstAction"
+Info (12128): Elaborating entity "Pool" for hierarchy "Pool:inst4"
+Warning (10230): Verilog HDL assignment warning at Pool.v(79): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at Pool.v(87): truncated value with size 132 to match size of target (120)
+Info (12128): Elaborating entity "Divider" for hierarchy "Pool:inst4|Divider:Div1"
+Info (12128): Elaborating entity "Switch" for hierarchy "Switch:inst7"
+Warning (10230): Verilog HDL assignment warning at Switch.v(29): truncated value with size 32 to match size of target (1)
+Info (12128): Elaborating entity "Action" for hierarchy "Action:inst2"
 Warning (10230): Verilog HDL assignment warning at Action.v(28): truncated value with size 32 to match size of target (17)
 Warning (10230): Verilog HDL assignment warning at Action.v(53): truncated value with size 32 to match size of target (11)
 Warning (10230): Verilog HDL assignment warning at Action.v(61): truncated value with size 32 to match size of target (17)
 Warning (10230): Verilog HDL assignment warning at Action.v(68): truncated value with size 32 to match size of target (4)
-Info (12128): Elaborating entity "FIFORam" for hierarchy "FIFORam:Ram"
-Info (12128): Elaborating entity "scfifo" for hierarchy "FIFORam:Ram|scfifo:scfifo_component"
-Info (12130): Elaborated megafunction instantiation "FIFORam:Ram|scfifo:scfifo_component"
-Info (12133): Instantiated megafunction "FIFORam:Ram|scfifo:scfifo_component" with the following parameter:
+Info (12128): Elaborating entity "Accumulation" for hierarchy "Accumulation:inst3"
+Warning (10230): Verilog HDL assignment warning at Accumulation.v(24): truncated value with size 29 to match size of target (15)
+Info (12128): Elaborating entity "FIFORam" for hierarchy "FIFORam:inst"
+Info (12128): Elaborating entity "scfifo" for hierarchy "FIFORam:inst|scfifo:scfifo_component"
+Info (12130): Elaborated megafunction instantiation "FIFORam:inst|scfifo:scfifo_component"
+Info (12133): Instantiated megafunction "FIFORam:inst|scfifo:scfifo_component" with the following parameter:
     Info (12134): Parameter "add_ram_output_register" = "ON"
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "lpm_numwords" = "2048"
@@ -1029,83 +996,55 @@ Info (12133): Instantiated megafunction "FIFORam:Ram|scfifo:scfifo_component" wi
     Info (12134): Parameter "use_eab" = "ON"
 Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_bk41.tdf
     Info (12023): Found entity 1: scfifo_bk41
-Info (12128): Elaborating entity "scfifo_bk41" for hierarchy "FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated"
+Info (12128): Elaborating entity "scfifo_bk41" for hierarchy "FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated"
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_ub41.tdf
     Info (12023): Found entity 1: a_dpfifo_ub41
-Info (12128): Elaborating entity "a_dpfifo_ub41" for hierarchy "FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo"
+Info (12128): Elaborating entity "a_dpfifo_ub41" for hierarchy "FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_p7e1.tdf
     Info (12023): Found entity 1: altsyncram_p7e1
-Info (12128): Elaborating entity "altsyncram_p7e1" for hierarchy "FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|altsyncram_p7e1:FIFOram"
+Info (12128): Elaborating entity "altsyncram_p7e1" for hierarchy "FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|altsyncram_p7e1:FIFOram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_vt8.tdf
     Info (12023): Found entity 1: cmpr_vt8
-Info (12128): Elaborating entity "cmpr_vt8" for hierarchy "FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|cmpr_vt8:almost_full_comparer"
-Info (12128): Elaborating entity "cmpr_vt8" for hierarchy "FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|cmpr_vt8:two_comparison"
+Info (12128): Elaborating entity "cmpr_vt8" for hierarchy "FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|cmpr_vt8:almost_full_comparer"
+Info (12128): Elaborating entity "cmpr_vt8" for hierarchy "FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|cmpr_vt8:two_comparison"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_cpb.tdf
     Info (12023): Found entity 1: cntr_cpb
-Info (12128): Elaborating entity "cntr_cpb" for hierarchy "FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|cntr_cpb:rd_ptr_msb"
+Info (12128): Elaborating entity "cntr_cpb" for hierarchy "FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|cntr_cpb:rd_ptr_msb"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_pp7.tdf
     Info (12023): Found entity 1: cntr_pp7
-Info (12128): Elaborating entity "cntr_pp7" for hierarchy "FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|cntr_pp7:usedw_counter"
+Info (12128): Elaborating entity "cntr_pp7" for hierarchy "FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|cntr_pp7:usedw_counter"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_dpb.tdf
     Info (12023): Found entity 1: cntr_dpb
-Info (12128): Elaborating entity "cntr_dpb" for hierarchy "FIFORam:Ram|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|cntr_dpb:wr_ptr"
-Info (12128): Elaborating entity "Accumulation" for hierarchy "Accumulation:Accum1"
-Info (12128): Elaborating entity "Pool" for hierarchy "Pool:Pool1"
-Warning (10230): Verilog HDL assignment warning at Pool.v(71): truncated value with size 32 to match size of target (11)
-Warning (10230): Verilog HDL assignment warning at Pool.v(79): truncated value with size 132 to match size of target (120)
-Info (12128): Elaborating entity "Divider" for hierarchy "Pool:Pool1|Divider:Div1"
-Info (12128): Elaborating entity "Storage" for hierarchy "Storage:Store1"
-Warning (10230): Verilog HDL assignment warning at Storage.v(29): truncated value with size 1320 to match size of target (1200)
-Info (12128): Elaborating entity "Ratio" for hierarchy "Ratio:Ratio1"
-Warning (10230): Verilog HDL assignment warning at Ratio.v(77): truncated value with size 32 to match size of target (11)
-Warning (10230): Verilog HDL assignment warning at Ratio.v(85): truncated value with size 132 to match size of target (120)
-Info (12128): Elaborating entity "Divider2" for hierarchy "Ratio:Ratio1|Divider2:Div2"
-Info (12128): Elaborating entity "Switch" for hierarchy "Switch:Switch1"
-Warning (10230): Verilog HDL assignment warning at Switch.v(28): truncated value with size 32 to match size of target (1)
+Info (12128): Elaborating entity "cntr_dpb" for hierarchy "FIFORam:inst|scfifo:scfifo_component|scfifo_bk41:auto_generated|a_dpfifo_ub41:dpfifo|cntr_dpb:wr_ptr"
+Info (12128): Elaborating entity "Ratio" for hierarchy "Ratio:inst6"
+Warning (10230): Verilog HDL assignment warning at Ratio.v(122): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at Ratio.v(130): truncated value with size 132 to match size of target (120)
+Info (12128): Elaborating entity "Divider2" for hierarchy "Ratio:inst6|Divider2:Div2"
+Info (12128): Elaborating entity "Storage" for hierarchy "Storage:inst5"
+Warning (10230): Verilog HDL assignment warning at Storage.v(40): truncated value with size 1320 to match size of target (1200)
 Info (19000): Inferred 1 megafunctions from design logic
-    Info (276034): Inferred altshift_taps megafunction from the following design logic: "Ratio:Ratio1|store_ratio_rtl_0"
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "Ratio:inst6|store_ratio_rtl_0"
         Info (286033): Parameter NUMBER_OF_TAPS set to 1
-        Info (286033): Parameter TAP_DISTANCE set to 9
+        Info (286033): Parameter TAP_DISTANCE set to 8
         Info (286033): Parameter WIDTH set to 12
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Pool:Pool1|Mult1"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Accumulation:Accum1|Mult0"
-Info (12130): Elaborated megafunction instantiation "Ratio:Ratio1|altshift_taps:store_ratio_rtl_0"
-Info (12133): Instantiated megafunction "Ratio:Ratio1|altshift_taps:store_ratio_rtl_0" with the following parameter:
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Accumulation:inst3|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Pool:inst4|Mult1"
+Info (12130): Elaborated megafunction instantiation "Ratio:inst6|altshift_taps:store_ratio_rtl_0"
+Info (12133): Instantiated megafunction "Ratio:inst6|altshift_taps:store_ratio_rtl_0" with the following parameter:
     Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
-    Info (12134): Parameter "TAP_DISTANCE" = "9"
+    Info (12134): Parameter "TAP_DISTANCE" = "8"
     Info (12134): Parameter "WIDTH" = "12"
-Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_rnm.tdf
-    Info (12023): Found entity 1: shift_taps_rnm
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_4e81.tdf
-    Info (12023): Found entity 1: altsyncram_4e81
-Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_bpf.tdf
-    Info (12023): Found entity 1: cntr_bpf
+Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_vnm.tdf
+    Info (12023): Found entity 1: shift_taps_vnm
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_2e81.tdf
+    Info (12023): Found entity 1: altsyncram_2e81
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_apf.tdf
+    Info (12023): Found entity 1: cntr_apf
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_pgc.tdf
     Info (12023): Found entity 1: cmpr_pgc
-Info (12130): Elaborated megafunction instantiation "Pool:Pool1|lpm_mult:Mult1"
-Info (12133): Instantiated megafunction "Pool:Pool1|lpm_mult:Mult1" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHA" = "5"
-    Info (12134): Parameter "LPM_WIDTHB" = "9"
-    Info (12134): Parameter "LPM_WIDTHP" = "14"
-    Info (12134): Parameter "LPM_WIDTHR" = "14"
-    Info (12134): Parameter "LPM_WIDTHS" = "1"
-    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "YES"
-    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
-Info (12131): Elaborated megafunction instantiation "Pool:Pool1|lpm_mult:Mult1|multcore:mult_core", which is child of megafunction instantiation "Pool:Pool1|lpm_mult:Mult1"
-Info (12131): Elaborated megafunction instantiation "Pool:Pool1|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "Pool:Pool1|lpm_mult:Mult1"
-Info (12131): Elaborated megafunction instantiation "Pool:Pool1|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "Pool:Pool1|lpm_mult:Mult1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_bfh.tdf
-    Info (12023): Found entity 1: add_sub_bfh
-Info (12131): Elaborated megafunction instantiation "Pool:Pool1|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "Pool:Pool1|lpm_mult:Mult1"
-Info (12131): Elaborated megafunction instantiation "Pool:Pool1|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "Pool:Pool1|lpm_mult:Mult1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mgh.tdf
-    Info (12023): Found entity 1: add_sub_mgh
-Info (12131): Elaborated megafunction instantiation "Pool:Pool1|lpm_mult:Mult1|altshift:external_latency_ffs", which is child of megafunction instantiation "Pool:Pool1|lpm_mult:Mult1"
-Info (12130): Elaborated megafunction instantiation "Accumulation:Accum1|lpm_mult:Mult0"
-Info (12133): Instantiated megafunction "Accumulation:Accum1|lpm_mult:Mult0" with the following parameter:
+Info (12130): Elaborated megafunction instantiation "Accumulation:inst3|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Accumulation:inst3|lpm_mult:Mult0" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHA" = "5"
     Info (12134): Parameter "LPM_WIDTHB" = "32"
     Info (12134): Parameter "LPM_WIDTHP" = "37"
@@ -1117,22 +1056,43 @@ Info (12133): Instantiated megafunction "Accumulation:Accum1|lpm_mult:Mult0" wit
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_bft.tdf
     Info (12023): Found entity 1: mult_bft
-Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12130): Elaborated megafunction instantiation "Pool:inst4|lpm_mult:Mult1"
+Info (12133): Instantiated megafunction "Pool:inst4|lpm_mult:Mult1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "5"
+    Info (12134): Parameter "LPM_WIDTHB" = "9"
+    Info (12134): Parameter "LPM_WIDTHP" = "14"
+    Info (12134): Parameter "LPM_WIDTHR" = "14"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12131): Elaborated megafunction instantiation "Pool:inst4|lpm_mult:Mult1|multcore:mult_core", which is child of megafunction instantiation "Pool:inst4|lpm_mult:Mult1"
+Info (12131): Elaborated megafunction instantiation "Pool:inst4|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "Pool:inst4|lpm_mult:Mult1"
+Info (12131): Elaborated megafunction instantiation "Pool:inst4|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "Pool:inst4|lpm_mult:Mult1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_bfh.tdf
+    Info (12023): Found entity 1: add_sub_bfh
+Info (12131): Elaborated megafunction instantiation "Pool:inst4|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "Pool:inst4|lpm_mult:Mult1"
+Info (12131): Elaborated megafunction instantiation "Pool:inst4|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "Pool:inst4|lpm_mult:Mult1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mgh.tdf
+    Info (12023): Found entity 1: add_sub_mgh
+Info (12131): Elaborated megafunction instantiation "Pool:inst4|lpm_mult:Mult1|altshift:external_latency_ffs", which is child of megafunction instantiation "Pool:inst4|lpm_mult:Mult1"
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13014): Ignored 33 buffer(s)
     Info (13019): Ignored 33 SOFT buffer(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 10118 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 10309 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 133 output pins
-    Info (21061): Implemented 9943 logic cells
+    Info (21059): Implemented 130 output pins
+    Info (21061): Implemented 10137 logic cells
     Info (21064): Implemented 24 RAM segments
     Info (21062): Implemented 4 DSP elements
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 678 megabytes
-    Info: Processing ended: Wed Mar 21 13:21:21 2018
-    Info: Elapsed time: 00:00:36
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 687 megabytes
+    Info: Processing ended: Fri Mar 23 19:02:25 2018
+    Info: Elapsed time: 00:00:31
     Info: Total CPU time (on all processors): 00:00:29
 
 

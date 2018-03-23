@@ -1,3 +1,3 @@
 v1
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Accumulation:Accum1|lpm_mult:Mult0|mult_bft:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Accumulation:Accum1|lpm_mult:Mult0|mult_bft:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Accumulation:inst3|lpm_mult:Mult0|mult_bft:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Accumulation:inst3|lpm_mult:Mult0|mult_bft:auto_generated|mac_out4,

@@ -16,3 +16,490 @@
 # Loading work.Divider2
 # Loading work.Switch
 # Error loading design
+vsim +altera -do Raman_run_msim_rtl_verilog.do -l msim_transcript -gui work.tbRam
+# vsim +altera -do Raman_run_msim_rtl_verilog.do -l msim_transcript -gui work.tbRam 
+# Loading work.tbRam
+# Loading work.Raman
+# Loading work.Action
+# Loading work.FIFORam
+# ** Error: (vsim-3033) D:/Quartus/Raman/FIFORam.v(83): Instantiation of 'scfifo' failed. The design unit was not found.
+# 
+#         Region: /tbRam/uut/Ram
+#         Searched libraries:
+#             D:/Quartus/Raman/work
+# Loading work.Accumulation
+# Loading work.Pool
+# Loading work.Divider
+# Loading work.Storage
+# Loading work.Ratio
+# Loading work.Divider2
+# Loading work.Switch
+# Error loading design
+vsim altera_mf_ver.scfifo
+# vsim altera_mf_ver.scfifo 
+# Loading altera_mf_ver.scfifo
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+vsim work.tbRam
+# vsim work.tbRam 
+# Loading work.tbRam
+# Loading work.Raman
+# Loading work.Action
+# Loading work.FIFORam
+# ** Error: (vsim-3033) D:/Quartus/Raman/FIFORam.v(83): Instantiation of 'scfifo' failed. The design unit was not found.
+# 
+#         Region: /tbRam/uut/Ram
+#         Searched libraries:
+#             D:/Quartus/Raman/work
+# Loading work.Accumulation
+# Loading work.Pool
+# Loading work.Divider
+# Loading work.Storage
+# Loading work.Ratio
+# Loading work.Divider2
+# Loading work.Switch
+# Error loading design
+vsim altera_mf_ver.scfifo
+# vsim altera_mf_ver.scfifo 
+# Loading altera_mf_ver.scfifo
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+vsim work.tbRam
+# vsim work.tbRam 
+# Loading work.tbRam
+# Loading work.Raman
+# Loading work.Action
+# Loading work.FIFORam
+# ** Error: (vsim-3033) D:/Quartus/Raman/FIFORam.v(83): Instantiation of 'scfifo' failed. The design unit was not found.
+# 
+#         Region: /tbRam/uut/Ram
+#         Searched libraries:
+#             D:/Quartus/Raman/work
+# Loading work.Accumulation
+# Loading work.Pool
+# Loading work.Divider
+# Loading work.Storage
+# Loading work.Ratio
+# Loading work.Divider2
+# Loading work.Switch
+# Error loading design
+vsim +altera -L altera_mf_ver -do Raman_run_msim_rtl_verilog.do -l msim_transcript -gui work.Raman
+# vsim +altera -L altera_mf_ver -do Raman_run_msim_rtl_verilog.do -l msim_transcript -gui work.Raman 
+# Loading work.Raman
+# Loading work.Action
+# Loading work.FIFORam
+# Loading altera_mf_ver.scfifo
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading work.Accumulation
+# Loading work.Pool
+# Loading work.Divider
+# Loading work.Storage
+# Loading work.Ratio
+# Loading work.Divider2
+# Loading work.Switch
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Raman.v(132): [TFMPC] - Too few port connections. Expected 10, found 5.
+# 
+#         Region: /Raman/Ram
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(132): [TFMPC] - Missing connection for port 'aclr'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(132): [TFMPC] - Missing connection for port 'sclr'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(132): [TFMPC] - Missing connection for port 'empty'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(132): [TFMPC] - Missing connection for port 'full'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(132): [TFMPC] - Missing connection for port 'usedw'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Pool.v(90): [TFMPC] - Too few port connections. Expected 7, found 6.
+# 
+#         Region: /Raman/Pool1/Div1
+# ** Warning: (vsim-3015) D:/Quartus/Raman/Pool.v(90): [PCDPC] - Port size (64 or 64) does not match connection size (12) for port 'quotient'. The port definition is at: D:/Quartus/Raman/Divider.v(10).
+# 
+#         Region: /Raman/Pool1/Div1
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Pool.v(90): [TFMPC] - Missing connection for port 'reminder'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Ratio.v(96): [TFMPC] - Too few port connections. Expected 7, found 6.
+# 
+#         Region: /Raman/Ratio1/Div2
+# ** Warning: (vsim-3015) D:/Quartus/Raman/Ratio.v(96): [PCDPC] - Port size (20 or 20) does not match connection size (12) for port 'quotient'. The port definition is at: D:/Quartus/Raman/Divider2.v(10).
+# 
+#         Region: /Raman/Ratio1/Div2
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Ratio.v(96): [TFMPC] - Missing connection for port 'reminder'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Raman.v(182): [TFMPC] - Too few port connections. Expected 6, found 5.
+# 
+#         Region: /Raman/Switch1
+# Raman_run_msim_rtl_verilog.do 
+# invalid command name "Raman_run_msim_rtl_verilog.do"
+# Compile of FIFORam.v was successful.
+# Compile of tbFIFORam.v was successful.
+# Compile of Action.v was successful.
+# Compile of Raman.v was successful.
+# Compile of Accumulation.v was successful.
+# Compile of Storage.v was successful.
+# Compile of Divider.v was successful.
+# Compile of Pool.v was successful.
+# Compile of Switch.v was successful.
+# Compile of Divider2.v was successful.
+# Compile of Ratio.v was successful.
+# Compile of TestbenchRam.v was successful.
+# 12 compiles, 0 failed with no errors. 
+vsim work.tbRam
+# vsim work.tbRam 
+# Loading work.tbRam
+# Loading work.Raman
+# Loading work.Action
+# Loading work.FIFORam
+# ** Error: (vsim-3033) D:/Quartus/Raman/FIFORam.v(83): Instantiation of 'scfifo' failed. The design unit was not found.
+# 
+#         Region: /tbRam/uut/Ram
+#         Searched libraries:
+#             D:/Quartus/Raman/work
+# Loading work.Accumulation
+# Loading work.Pool
+# Loading work.Divider
+# Loading work.Storage
+# Loading work.Ratio
+# Loading work.Divider2
+# Loading work.Switch
+# Error loading design
+vsim +altera -L altera_mf_ver -do Raman_run_msim_rtl_verilog.do -l msim_transcript -gui work.tbRam
+# vsim +altera -L altera_mf_ver -do Raman_run_msim_rtl_verilog.do -l msim_transcript -gui work.tbRam 
+# Loading work.tbRam
+# Loading work.Raman
+# Loading work.Action
+# Loading work.FIFORam
+# Loading altera_mf_ver.scfifo
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading work.Accumulation
+# Loading work.Pool
+# Loading work.Divider
+# Loading work.Storage
+# Loading work.Ratio
+# Loading work.Divider2
+# Loading work.Switch
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Too few port connections. Expected 10, found 5.
+# 
+#         Region: /tbRam/uut/Ram
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'aclr'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'sclr'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'empty'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'full'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'usedw'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Pool.v(90): [TFMPC] - Too few port connections. Expected 7, found 6.
+# 
+#         Region: /tbRam/uut/Pool1/Div1
+# ** Warning: (vsim-3015) D:/Quartus/Raman/Pool.v(90): [PCDPC] - Port size (64 or 64) does not match connection size (12) for port 'quotient'. The port definition is at: D:/Quartus/Raman/Divider.v(10).
+# 
+#         Region: /tbRam/uut/Pool1/Div1
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Pool.v(90): [TFMPC] - Missing connection for port 'reminder'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Ratio.v(96): [TFMPC] - Too few port connections. Expected 7, found 6.
+# 
+#         Region: /tbRam/uut/Ratio1/Div2
+# ** Warning: (vsim-3015) D:/Quartus/Raman/Ratio.v(96): [PCDPC] - Port size (20 or 20) does not match connection size (12) for port 'quotient'. The port definition is at: D:/Quartus/Raman/Divider2.v(10).
+# 
+#         Region: /tbRam/uut/Ratio1/Div2
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Ratio.v(96): [TFMPC] - Missing connection for port 'reminder'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Raman.v(184): [TFMPC] - Too few port connections. Expected 6, found 5.
+# 
+#         Region: /tbRam/uut/Switch1
+# Raman_run_msim_rtl_verilog.do 
+# invalid command name "Raman_run_msim_rtl_verilog.do"
+# Compile of FIFORam.v was successful.
+# Compile of tbFIFORam.v was successful.
+# Compile of Action.v was successful.
+# Compile of Raman.v was successful.
+# Compile of Accumulation.v was successful.
+# Compile of Storage.v was successful.
+# Compile of Divider.v was successful.
+# Compile of Pool.v was successful.
+# Compile of Switch.v was successful.
+# Compile of Divider2.v was successful.
+# Compile of Ratio.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim +altera -L altera_mf_ver -do Raman_run_msim_rtl_verilog.do -l msim_transcript -gui work.tbRam
+# vsim +altera -L altera_mf_ver -do Raman_run_msim_rtl_verilog.do -l msim_transcript -gui work.tbRam 
+# Loading work.tbRam
+# Loading work.Raman
+# Loading work.Action
+# Loading work.FIFORam
+# Loading altera_mf_ver.scfifo
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading work.Accumulation
+# Loading work.Pool
+# Loading work.Divider
+# Loading work.Storage
+# Loading work.Ratio
+# Loading work.Divider2
+# Loading work.Switch
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Too few port connections. Expected 10, found 5.
+# 
+#         Region: /tbRam/uut/Ram
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'aclr'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'sclr'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'empty'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'full'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'usedw'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Pool.v(90): [TFMPC] - Too few port connections. Expected 7, found 6.
+# 
+#         Region: /tbRam/uut/Pool1/Div1
+# ** Warning: (vsim-3015) D:/Quartus/Raman/Pool.v(90): [PCDPC] - Port size (64 or 64) does not match connection size (12) for port 'quotient'. The port definition is at: D:/Quartus/Raman/Divider.v(10).
+# 
+#         Region: /tbRam/uut/Pool1/Div1
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Pool.v(90): [TFMPC] - Missing connection for port 'reminder'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Ratio.v(96): [TFMPC] - Too few port connections. Expected 7, found 6.
+# 
+#         Region: /tbRam/uut/Ratio1/Div2
+# ** Warning: (vsim-3015) D:/Quartus/Raman/Ratio.v(96): [PCDPC] - Port size (20 or 20) does not match connection size (12) for port 'quotient'. The port definition is at: D:/Quartus/Raman/Divider2.v(10).
+# 
+#         Region: /tbRam/uut/Ratio1/Div2
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Ratio.v(96): [TFMPC] - Missing connection for port 'reminder'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Raman.v(184): [TFMPC] - Too few port connections. Expected 6, found 5.
+# 
+#         Region: /tbRam/uut/Switch1
+# Raman_run_msim_rtl_verilog.do 
+# invalid command name "Raman_run_msim_rtl_verilog.do"
+# Load canceled
+vsim +altera -L altera_mf_ver -L altera_ver -L work -Lf work -Lf altera_mf_ver -do Raman_run_msim_rtl_verilog.do -l msim_transcript -gui work.tbRam
+# vsim +altera -L altera_mf_ver -L altera_ver -L work -Lf work -Lf altera_mf_ver -do Raman_run_msim_rtl_verilog.do -l msim_transcript -gui work.tbRam 
+# Loading work.tbRam
+# Loading work.Raman
+# Loading work.Action
+# Loading work.FIFORam
+# Loading altera_mf_ver.scfifo
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading work.Accumulation
+# Loading work.Pool
+# Loading work.Divider
+# Loading work.Storage
+# Loading work.Ratio
+# Loading work.Divider2
+# Loading work.Switch
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Too few port connections. Expected 10, found 5.
+# 
+#         Region: /tbRam/uut/Ram
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'aclr'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'sclr'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'empty'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'full'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'usedw'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Pool.v(90): [TFMPC] - Too few port connections. Expected 7, found 6.
+# 
+#         Region: /tbRam/uut/Pool1/Div1
+# ** Warning: (vsim-3015) D:/Quartus/Raman/Pool.v(90): [PCDPC] - Port size (64 or 64) does not match connection size (12) for port 'quotient'. The port definition is at: D:/Quartus/Raman/Divider.v(10).
+# 
+#         Region: /tbRam/uut/Pool1/Div1
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Pool.v(90): [TFMPC] - Missing connection for port 'reminder'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Ratio.v(96): [TFMPC] - Too few port connections. Expected 7, found 6.
+# 
+#         Region: /tbRam/uut/Ratio1/Div2
+# ** Warning: (vsim-3015) D:/Quartus/Raman/Ratio.v(96): [PCDPC] - Port size (20 or 20) does not match connection size (12) for port 'quotient'. The port definition is at: D:/Quartus/Raman/Divider2.v(10).
+# 
+#         Region: /tbRam/uut/Ratio1/Div2
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Ratio.v(96): [TFMPC] - Missing connection for port 'reminder'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Raman.v(184): [TFMPC] - Too few port connections. Expected 6, found 5.
+# 
+#         Region: /tbRam/uut/Switch1
+# Raman_run_msim_rtl_verilog.do 
+# invalid command name "Raman_run_msim_rtl_verilog.do"
+Raman_run_msim_rtl_verilog.do
+# invalid command name "Raman_run_msim_rtl_verilog.do"
+Raman_run_msim_rtl_verilog.do
+# invalid command name "Raman_run_msim_rtl_verilog.do"
+Raman_run_msim_rtl_verilog.do
+# invalid command name "Raman_run_msim_rtl_verilog.do"
+add wave -position end  sim:/tbRam/data
+add wave -position end  sim:/tbRam/clk
+add wave -position end  sim:/tbRam/enable
+add wave -position end  sim:/tbRam/q
+add wave -position end  sim:/tbRam/cnt_point
+add wave -position end  sim:/tbRam/cnt_measure
+add wave -position end  sim:/tbRam/cnt_save
+add wave -position end  sim:/tbRam/cnt_div
+add wave -position end  sim:/tbRam/switch
+add wave -position end  sim:/tbRam/ready
+add wave -position end  sim:/tbRam/div_en
+add wave -position end  sim:/tbRam/sum1
+add wave -position end  sim:/tbRam/sum2
+add wave -position end  sim:/tbRam/sum3
+add wave -position end  sim:/tbRam/sum5
+add wave -position end  sim:/tbRam/sum6
+add wave -position end  sim:/tbRam/cnt_ratio
+add wave -position end  sim:/tbRam/ready_ratio
+add wave -position end  sim:/tbRam/ratio_en
+add wave -position end  sim:/tbRam/rdreq
+add wave -position end  sim:/tbRam/wrreq
+run -all
+# Break in Module tbRam at D:/Quartus/Raman/tbFIFORam.v line 189
+# Compile of FIFORam.v was successful.
+# Compile of Action.v was successful.
+# Compile of Raman.v was successful.
+# Compile of Accumulation.v was successful.
+# Compile of Storage.v was successful.
+# Compile of Divider.v was successful.
+# Compile of Pool.v was successful.
+# Compile of Switch.v was successful.
+# Compile of Divider2.v was successful.
+# Compile of Ratio.v was successful.
+# Compile of TestbenchRam.v was successful.
+# 11 compiles, 0 failed with no errors. 
+# Compile of FIFORam.v was successful.
+# Compile of Action.v was successful.
+# Compile of Raman.v was successful.
+# Compile of Accumulation.v was successful.
+# Compile of Storage.v was successful.
+# Compile of Divider.v was successful.
+# Compile of Pool.v was successful.
+# Compile of Switch.v was successful.
+# Compile of Divider2.v was successful.
+# Compile of Ratio.v was successful.
+# Compile of TestbenchRam.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -L altera_mf_ver -Lf altera_mf_ver work.tbRam
+# vsim -L altera_mf_ver -Lf altera_mf_ver work.tbRam 
+# Loading work.tbRam
+# Loading work.Raman
+# Loading work.Action
+# Loading work.FIFORam
+# Loading altera_mf_ver.scfifo
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading work.Accumulation
+# Loading work.Pool
+# Loading work.Divider
+# Loading work.Storage
+# Loading work.Ratio
+# Loading work.Divider2
+# Loading work.Switch
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Too few port connections. Expected 10, found 5.
+# 
+#         Region: /tbRam/uut/Ram
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'aclr'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'sclr'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'empty'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'full'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'usedw'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Pool.v(90): [TFMPC] - Too few port connections. Expected 7, found 6.
+# 
+#         Region: /tbRam/uut/Pool1/Div1
+# ** Warning: (vsim-3015) D:/Quartus/Raman/Pool.v(90): [PCDPC] - Port size (64 or 64) does not match connection size (12) for port 'quotient'. The port definition is at: D:/Quartus/Raman/Divider.v(10).
+# 
+#         Region: /tbRam/uut/Pool1/Div1
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Pool.v(90): [TFMPC] - Missing connection for port 'reminder'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Ratio.v(96): [TFMPC] - Too few port connections. Expected 7, found 6.
+# 
+#         Region: /tbRam/uut/Ratio1/Div2
+# ** Warning: (vsim-3015) D:/Quartus/Raman/Ratio.v(96): [PCDPC] - Port size (20 or 20) does not match connection size (12) for port 'quotient'. The port definition is at: D:/Quartus/Raman/Divider2.v(10).
+# 
+#         Region: /tbRam/uut/Ratio1/Div2
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Ratio.v(96): [TFMPC] - Missing connection for port 'reminder'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Raman.v(184): [TFMPC] - Too few port connections. Expected 6, found 5.
+# 
+#         Region: /tbRam/uut/Switch1
+add wave -position end  sim:/tbRam/data
+add wave -position end  sim:/tbRam/clk
+add wave -position end  sim:/tbRam/enable
+add wave -position end  sim:/tbRam/q
+add wave -position end  sim:/tbRam/cnt_point
+add wave -position end  sim:/tbRam/cnt_measure
+add wave -position end  sim:/tbRam/cnt_save
+add wave -position end  sim:/tbRam/cnt_div
+add wave -position end  sim:/tbRam/switch
+add wave -position end  sim:/tbRam/ready
+add wave -position end  sim:/tbRam/div_en
+add wave -position end  sim:/tbRam/sum1
+add wave -position end  sim:/tbRam/sum2
+add wave -position end  sim:/tbRam/sum3
+add wave -position end  sim:/tbRam/sum5
+add wave -position end  sim:/tbRam/sum6
+add wave -position end  sim:/tbRam/cnt_ratio
+add wave -position end  sim:/tbRam/ready_ratio
+add wave -position end  sim:/tbRam/ratio_en
+add wave -position end  sim:/tbRam/rdreq
+add wave -position end  sim:/tbRam/wrreq
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Quartus/Raman/wave.do
+run -all
+# Break in Module tbRam at D:/Quartus/Raman/TestbenchRam.v line 75
+# Compile of FIFORam.v was successful.
+# Compile of Action.v was successful.
+# Compile of Raman.v was successful.
+# Compile of Accumulation.v was successful.
+# Compile of Storage.v was successful.
+# Compile of Divider.v was successful.
+# Compile of Pool.v was successful.
+# Compile of Switch.v was successful.
+# Compile of Divider2.v was successful.
+# Compile of Ratio.v was successful.
+# Compile of TestbenchRam.v was successful.
+# 11 compiles, 0 failed with no errors. 
+restart -f
+# Loading work.tbRam
+# Loading work.Raman
+# Loading work.Action
+# Loading work.FIFORam
+# Loading work.Accumulation
+# Loading work.Pool
+# Loading work.Divider
+# Loading work.Storage
+# Loading work.Ratio
+# Loading work.Divider2
+# Loading work.Switch
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Too few port connections. Expected 10, found 5.
+# 
+#         Region: /tbRam/uut/Ram
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'aclr'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'sclr'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'empty'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'full'.
+# 
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Raman.v(134): [TFMPC] - Missing connection for port 'usedw'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Pool.v(90): [TFMPC] - Too few port connections. Expected 7, found 6.
+# 
+#         Region: /tbRam/uut/Pool1/Div1
+# ** Warning: (vsim-3015) D:/Quartus/Raman/Pool.v(90): [PCDPC] - Port size (64 or 64) does not match connection size (12) for port 'quotient'. The port definition is at: D:/Quartus/Raman/Divider.v(10).
+# 
+#         Region: /tbRam/uut/Pool1/Div1
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Pool.v(90): [TFMPC] - Missing connection for port 'reminder'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Ratio.v(96): [TFMPC] - Too few port connections. Expected 7, found 6.
+# 
+#         Region: /tbRam/uut/Ratio1/Div2
+# ** Warning: (vsim-3015) D:/Quartus/Raman/Ratio.v(96): [PCDPC] - Port size (20 or 20) does not match connection size (12) for port 'quotient'. The port definition is at: D:/Quartus/Raman/Divider2.v(10).
+# 
+#         Region: /tbRam/uut/Ratio1/Div2
+# ** Warning: (vsim-3722) D:/Quartus/Raman/Ratio.v(96): [TFMPC] - Missing connection for port 'reminder'.
+# 
+# ** Warning: (vsim-3017) D:/Quartus/Raman/Raman.v(184): [TFMPC] - Too few port connections. Expected 6, found 5.
+# 
+#         Region: /tbRam/uut/Switch1
+run -all
+# Break in Module tbRam at D:/Quartus/Raman/TestbenchRam.v line 75

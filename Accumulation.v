@@ -6,10 +6,12 @@ rdreq,
 q,
 cnt_point,
 cnt_measure,
-sum);
+sum,
+presum);
 
-parameter POINTS;
-parameter MEASURES;
+parameter POINTS = 10;
+parameter MEASURES = 100;
+
 
 input clk;
 input rdreq;
@@ -17,6 +19,9 @@ input [11:0] q;
 input [10:0] cnt_point;
 input [16:0] cnt_measure;
 output [29*POINTS-1:0] sum;
+output [14:0] presum;
+
+assign presum = sum [29*10-1 -: 29];
 
 reg [29*POINTS-1:0] summary = 1; //Накапливает MEASURES измерений с POINTS точек
 reg [29*POINTS-1:0] qreg = 0; //Данные за одно измерение с POINTS точек

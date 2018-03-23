@@ -2,8 +2,8 @@ library verilog;
 use verilog.vl_types.all;
 entity Action is
     generic(
-        POINTS          : vl_notype;
-        MEASURES        : vl_notype
+        POINTS          : integer := 10;
+        MEASURES        : integer := 100
     );
     port(
         enable          : in     vl_logic;
@@ -15,6 +15,6 @@ entity Action is
         cnt_save        : out    vl_logic_vector(3 downto 0)
     );
     attribute mti_svvh_generic_type : integer;
-    attribute mti_svvh_generic_type of POINTS : constant is 5;
-    attribute mti_svvh_generic_type of MEASURES : constant is 5;
+    attribute mti_svvh_generic_type of POINTS : constant is 1;
+    attribute mti_svvh_generic_type of MEASURES : constant is 1;
 end Action;

@@ -1,10 +1,5 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="Raman">
-		<CBX_INST_ENTRY INSTANCE_NAME="|Raman|Accumulation:Accum1|lpm_mult:Mult0" CBX_FILE_NAME="mult_bft.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Raman|Pool:Pool1|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_bfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Raman|Pool:Pool1|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_mgh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Raman|FIFORam:Ram|scfifo:scfifo_component" CBX_FILE_NAME="scfifo_bk41.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Raman|Ratio:Ratio1|altshift_taps:store_ratio_rtl_0" CBX_FILE_NAME="shift_taps_rnm.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

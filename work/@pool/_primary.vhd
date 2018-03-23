@@ -2,8 +2,8 @@ library verilog;
 use verilog.vl_types.all;
 entity Pool is
     generic(
-        POINTS          : vl_notype;
-        MEASURES        : vl_notype
+        POINTS          : integer := 10;
+        MEASURES        : integer := 100
     );
     port(
         clk             : in     vl_logic;
@@ -15,9 +15,10 @@ entity Pool is
         ready           : out    vl_logic;
         cnt_div         : out    vl_logic_vector(10 downto 0);
         div_en          : out    vl_logic;
-        switch          : in     vl_logic
+        switch          : in     vl_logic;
+        prestore        : out    vl_logic_vector(11 downto 0)
     );
     attribute mti_svvh_generic_type : integer;
-    attribute mti_svvh_generic_type of POINTS : constant is 5;
-    attribute mti_svvh_generic_type of MEASURES : constant is 5;
+    attribute mti_svvh_generic_type of POINTS : constant is 1;
+    attribute mti_svvh_generic_type of MEASURES : constant is 1;
 end Pool;
