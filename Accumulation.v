@@ -2,43 +2,53 @@
 //Накопление 100000 значений
 module Accumulation (
 clk,
-rdreq,
+//rdreq,
 q,
+qmem,
+datamem,
+POINTS,
+MEASURES,
 cnt_point,
 cnt_measure,
-sum,
-presum);
+aclr,
+cnt_point_read,
+wren,
+rdreq
+);
 
-parameter POINTS = 10;
-parameter MEASURES = 100;
 
 
 input clk;
-input rdreq;
+//input rdreq;
 input [11:0] q;
+input [28:0] qmem;
+input [10:0] POINTS;
+input [16:0] MEASURES;
 input [10:0] cnt_point;
 input [16:0] cnt_measure;
-output [29*POINTS-1:0] sum;
-output [14:0] presum;
+output [28:0] datamem;
+output reg aclr = 0;
+output [10:0] cnt_point_read;
+input rdreq;
+output reg wren = 0;
 
-assign presum = sum [29*10-1 -: 29];
-
-reg [29*POINTS-1:0] summary = 1; //Накапливает MEASURES измерений с POINTS точек
-reg [29*POINTS-1:0] qreg = 0; //Данные за одно измерение с POINTS точек
-
+assign datamem = aclr ? 0 : qmem + q;
+assign cnt_point_read = cnt_point + 2;
 
 always @(posedge clk)
 begin
-	if (rdreq)
-	begin
-		qreg = (q << (29*(cnt_point-5)));
-		summary = summary + qreg;
-	end
-	if (cnt_measure == MEASURES-1 && cnt_point == 1)
-	summary = 0;
+	if (cnt_measure == 0 /*&& cnt_point == 1*/)
+	aclr = 1;
+	else
+	aclr = 0;
 end
 
-
-assign sum = summary;
+always @(posedge clk)
+begin
+	if (1)
+	wren <= rdreq;
+	else 
+	wren <= 0;
+end
 
 endmodule

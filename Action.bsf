@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 216 160)
+	(rect 16 16 272 128)
 	(text "Action" (rect 5 0 30 12)(font "Arial" ))
-	(text "inst" (rect 8 128 20 140)(font "Arial" ))
+	(text "inst" (rect 8 96 20 108)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -38,52 +38,48 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
-		(pt 200 32)
+		(pt 0 64)
+		(input)
+		(text "POINTS[10..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "POINTS[10..0]" (rect 21 59 78 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "MEASURES[16..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "MEASURES[16..0]" (rect 21 75 102 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 256 32)
 		(output)
 		(text "wrreq" (rect 0 0 22 12)(font "Arial" ))
-		(text "wrreq" (rect 157 27 179 39)(font "Arial" ))
-		(line (pt 200 32)(pt 184 32)(line_width 1))
+		(text "wrreq" (rect 213 27 235 39)(font "Arial" ))
+		(line (pt 256 32)(pt 240 32)(line_width 1))
 	)
 	(port
-		(pt 200 48)
+		(pt 256 48)
 		(output)
 		(text "rdreq" (rect 0 0 21 12)(font "Arial" ))
-		(text "rdreq" (rect 158 43 179 55)(font "Arial" ))
-		(line (pt 200 48)(pt 184 48)(line_width 1))
+		(text "rdreq" (rect 214 43 235 55)(font "Arial" ))
+		(line (pt 256 48)(pt 240 48)(line_width 1))
 	)
 	(port
-		(pt 200 64)
+		(pt 256 64)
 		(output)
 		(text "cnt_point[10..0]" (rect 0 0 59 12)(font "Arial" ))
-		(text "cnt_point[10..0]" (rect 120 59 179 71)(font "Arial" ))
-		(line (pt 200 64)(pt 184 64)(line_width 3))
+		(text "cnt_point[10..0]" (rect 176 59 235 71)(font "Arial" ))
+		(line (pt 256 64)(pt 240 64)(line_width 3))
 	)
 	(port
-		(pt 200 80)
+		(pt 256 80)
 		(output)
 		(text "cnt_measure[16..0]" (rect 0 0 76 12)(font "Arial" ))
-		(text "cnt_measure[16..0]" (rect 103 75 179 87)(font "Arial" ))
-		(line (pt 200 80)(pt 184 80)(line_width 3))
+		(text "cnt_measure[16..0]" (rect 159 75 235 87)(font "Arial" ))
+		(line (pt 256 80)(pt 240 80)(line_width 3))
 	)
-	(port
-		(pt 200 96)
-		(output)
-		(text "cnt_save[3..0]" (rect 0 0 57 12)(font "Arial" ))
-		(text "cnt_save[3..0]" (rect 122 91 179 103)(font "Arial" ))
-		(line (pt 200 96)(pt 184 96)(line_width 3))
-	)
-	(parameter
-		"POINTS"
-		"1500"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"MEASURES"
-		"100000"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
-		(rectangle (rect 16 16 184 128)(line_width 1))
+		(rectangle (rect 16 16 240 96)(line_width 1))
 	)
-	(annotation_block (parameter)(rect 216 -64 316 16))
 )

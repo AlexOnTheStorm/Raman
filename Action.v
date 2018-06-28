@@ -5,29 +5,21 @@ enable,
 wrreq,
 rdreq,
 clk,
+POINTS,
+MEASURES,
 cnt_point,
-cnt_measure,
-cnt_save);
+cnt_measure);
 
 input enable;
 input clk;
-output reg wrreq;
-output reg rdreq;
-output reg [10:0] cnt_point;
-output reg [16:0] cnt_measure;
-output reg [3:0] cnt_save;
+input [10:0] POINTS;
+input [16:0] MEASURES;
 
-parameter POINTS = 10;
-parameter MEASURES = 100;
+output reg wrreq = 0;
+output reg rdreq = 0;
+output reg [10:0] cnt_point = 0;
+output reg [16:0] cnt_measure = 0/*MEASURES-1*/; //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-initial
-begin
-	wrreq = 0;
-	rdreq = 0;
-	cnt_point = 0;
-	cnt_measure = MEASURES-1;
-	cnt_save = 9;
-end
 
 always @(posedge clk)
 begin
@@ -39,7 +31,7 @@ end
 
 always @(posedge clk)
 begin
-	if (cnt_point >= 3 && cnt_point <= POINTS + 3)
+	if (cnt_point >= 3 && cnt_point <= POINTS + 3 && cnt_measure < MEASURES /*&& cnt_measure > 0*/)
 	rdreq <= 1'b1;
 	else
 	rdreq <= 1'b0;
@@ -60,14 +52,6 @@ begin
 	else if (cnt_point == 1)
 	cnt_measure <= cnt_measure + 1;
 	
-end
-
-always @(posedge clk)
-begin
-	if (cnt_measure == MEASURES-1 && cnt_point == 0 && !enable)
-	cnt_save <= cnt_save + 1;
-	if (cnt_save > 9)
-	cnt_save <= 0;
 end
 
 

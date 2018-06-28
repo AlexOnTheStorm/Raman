@@ -1,24 +1,23 @@
 library verilog;
 use verilog.vl_types.all;
 entity Pool is
-    generic(
-        POINTS          : integer := 10;
-        MEASURES        : integer := 100
-    );
     port(
         clk             : in     vl_logic;
         cnt_measure     : in     vl_logic_vector(16 downto 0);
         cnt_point       : in     vl_logic_vector(10 downto 0);
-        cnt_save        : in     vl_logic_vector(3 downto 0);
-        sum             : in     vl_logic_vector;
-        store           : out    vl_logic_vector;
-        ready           : out    vl_logic;
+        MEASURES        : in     vl_logic_vector(16 downto 0);
+        POINTS          : in     vl_logic_vector(10 downto 0);
+        cnt_save        : out    vl_logic_vector(3 downto 0);
         cnt_div         : out    vl_logic_vector(10 downto 0);
-        div_en          : out    vl_logic;
+        div_enable      : out    vl_logic;
         switch          : in     vl_logic;
-        prestore        : out    vl_logic_vector(11 downto 0)
+        address         : out    vl_logic_vector(10 downto 0);
+        start           : out    vl_logic;
+        qstokes         : in     vl_logic_vector(28 downto 0);
+        qantistokes     : in     vl_logic_vector(28 downto 0);
+        ready           : out    vl_logic;
+        quotient        : out    vl_logic_vector(11 downto 0);
+        wren_stokes     : out    vl_logic;
+        wren_antistokes : out    vl_logic
     );
-    attribute mti_svvh_generic_type : integer;
-    attribute mti_svvh_generic_type of POINTS : constant is 1;
-    attribute mti_svvh_generic_type of MEASURES : constant is 1;
 end Pool;

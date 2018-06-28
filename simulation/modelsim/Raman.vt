@@ -1,0 +1,98 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "03/30/2018 14:55:46"
+                                                                                
+// Verilog Test Bench template for design : Raman
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module Raman_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg clk;
+reg [11:0] data;
+reg enable;
+// wires                                               
+wire C0;
+wire [10:0]  cnt_div;
+wire [16:0]  cnt_measure;
+wire [10:0]  cnt_point;
+wire [3:0]  cnt_save;
+wire div_enable;
+wire [11:0]  q;
+wire [28:0]  qantistokes;
+wire [11:0]  qout;
+wire [28:0]  qstokes;
+wire [28:0]  qsummary;
+wire ratio_enable;
+wire rdreq;
+wire ready;
+wire start;
+wire switch;
+wire wrreq;
+
+// assign statements (if any)                          
+Raman i1 (
+// port map - connection between master ports and signals/registers   
+	.C0(C0),
+	.clk(clk),
+	.cnt_div(cnt_div),
+	.cnt_measure(cnt_measure),
+	.cnt_point(cnt_point),
+	.cnt_save(cnt_save),
+	.data(data),
+	.div_enable(div_enable),
+	.enable(enable),
+	.q(q),
+	.qantistokes(qantistokes),
+	.qout(qout),
+	.qstokes(qstokes),
+	.qsummary(qsummary),
+	.ratio_enable(ratio_enable),
+	.rdreq(rdreq),
+	.ready(ready),
+	.start(start),
+	.switch(switch),
+	.wrreq(wrreq)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+                                                       
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+

@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for Altera-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<QuartusExecution>
+		<AddressBits>64</AddressBits>
+		<ApplicationError>
+		<Bits>64</Bits>
+		<CommandLine>quartus</CommandLine>
+		<ErrorMessage>Access Violation at 0X0000000050A61C0D</ErrorMessage>
+		<Line>0</Line>
+		<Platform>windows</Platform>
+		<SourceFile>unknown</SourceFile>
+		<StackTrace>
+	 0x50a61c0c: (?removeEventFilter@QObject@@QEAAXPEAV1@@Z + 0x1c)
+	0x7ff8229b72d6: (?track@AFCQ_DRAG_TRACKER@@SAXPEAVQWidget@@AEBVQPoint@@PEAVAFCQ_DRAG_TRACKER_CALLBACK@@N@Z + 0xc6)
+	0x7ff8229c19fa: (?track_rect@AFCQ_DRAG_TRACKER@@SA?AVQRect@@PEAVQWidget@@AEBVQPoint@@PEAVQScrollArea@@N@Z + 0x4a)
+	0x7ff8115324aa: (??1PPLQ_EXPORTED_DESIGN@@UEAA@XZ + 0xa269a)
+	0x7ff811543c3d: (??1PPLQ_EXPORTED_DESIGN@@UEAA@XZ + 0xb3e2d)
+	0x7ff81157ca83: (prj_pplq_create_frame_wnd + 0x48b3)
+	 0x50c8a150: (?event@QWidget@@MEAA_NPEAVQEvent@@@Z + 0xc0)
+	0x7ff81149e4d1: (??1PPLQ_EXPORTED_DESIGN@@UEAA@XZ + 0xe6c1)
+	 0x50c428f5: (?notify_helper@QApplicationPrivate@@QEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0xf5)
+	 0x50c441ab: (?notify@QApplication@@UEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0x70b)
+	 0x50a4a7c1: (?notifyInternal@QCoreApplication@@AEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0x71)
+	 0x50c4371c: (?sendMouseEvent@QApplicationPrivate@@SA_NPEAVQWidget@@PEAVQMouseEvent@@00PEAPEAV2@AEAV?$QPointer@VQWidget@@@@_N@Z + 0x1ec)
+	 0x50ca1647: (?winFocus@QApplication@@QEAAXPEAVQWidget@@_N@Z + 0xd67)
+	 0x50ca3f4c: (?restoreOverrideCursor@QApplication@@SAXXZ + 0x93c)
+	0x7ff877eb6cc0: (CallWindowProcW + 0x4c0)
+	0x7ff877eb6692: (DispatchMessageW + 0x1d2)
+	 0x50a72f69: (?processEvents@QEventDispatcherWin32@@UEAA_NV?$QFlags@W4ProcessEventsFlag@QEventLoop@@@@@Z + 0x3b9)
+	 0x50ca3564: (?translateTouchEvent@QApplicationPrivate@@QEAA_NAEBUtagMSG@@@Z + 0x884)
+	 0x50a49cf0: (?exec@QEventLoop@@QEAAHV?$QFlags@W4ProcessEventsFlag@QEventLoop@@@@@Z + 0x230)
+	 0x50a4e5ff: (?exec@QCoreApplication@@SAHXZ + 0xdf)
+	0x7ff67d6f108e:
+	0x7ff83e1aa7f8: (?msg_exe_fini@@YAXXZ + 0x58)
+	0x7ff83e1aaf3c: (?msg_exe_fini@@YAXXZ + 0x79c)
+	0x7ff83e261f04: (??1MEM_SEGMENT_INTERNAL@@UEAA@XZ + 0x194)
+	0x7ff83e1ab8bf: (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0x8f)
+	0x7ff67d6f1ab2:
+	0x7ff67d6f13de:
+	0x7ff8790a3033: (BaseThreadInitThunk + 0x13)
+	0x7ff87aa01550: (RtlUserThreadStart + 0x20)
+		</StackTrace>
+		<Subsystem>unknown</Subsystem>
+	</ApplicationError>
+	<Compilation>
+			<CompileID>0</CompileID>
+			<DeviceFamily/>
+			<IncrementalCompilation/>
+			<TopLevelEntityName/>
+		</Compilation>
+		<DateInvoked>2018/06/05 13:16:06</DateInvoked>
+		<ElapsedTime>26097</ElapsedTime>
+		<IP>192.168.1.37</IP>
+		<IsInternal>false</IsInternal>
+		<IsQt>true</IsQt>
+		<License>
+			<Edition>Web Edition</Edition>
+			<LicenseHostID/>
+		</License>
+		<Machine>
+			<CPUCountLogical>8</CPUCountLogical>
+			<CPUCountPhysical>1</CPUCountPhysical>
+			<CPUSpeed>2494</CPUSpeed>
+			<Hostname>DESKTOP-NKDPDT1</Hostname>
+			<NIC>
+				<Address>10c37bac362c</Address>
+			</NIC>
+			<NIC>
+				<Address>543530d91fa4</Address>
+			</NIC>
+			<NIC>
+				<Address>543530d91fa3</Address>
+			</NIC>
+			<NIC>
+				<Address>543530d91fa5</Address>
+			</NIC>
+			<NIC>
+				<Address>543530d91fa6</Address>
+			</NIC>
+			<OS>Windows 7</OS>
+			<OSAddressBits>64</OSAddressBits>
+			<OSVersion>6.2</OSVersion>
+			<Platform>windows</Platform>
+			<ScreenResolution>unknown</ScreenResolution>
+			<TotalPhysicalRAM>8075</TotalPhysicalRAM>
+			<TotalVirtualRAM>6400</TotalVirtualRAM>
+		</Machine>
+		<Name>quartus</Name>
+		<PeakMemoryUsed>0</PeakMemoryUsed>
+		<ProjectRevision>
+			<ProjectName/>
+			<Revision/>
+		</ProjectRevision>
+		<QuartusInstallation>
+			<InstallationID>18431779550764.151162643306548</InstallationID>
+			<Version>
+				<Build>182</Build>
+				<BuildSite>SJ</BuildSite>
+				<BuildSuffix/>
+				<Edition>Web Edition</Edition>
+				<ServicePack>0</ServicePack>
+				<VersionNumber>13.1</VersionNumber>
+			</Version>
+		</QuartusInstallation>
+		<QuartusUser>
+			<AlteraUserName/>
+			<FAEContactName/>
+			<TalkbackStatus>
+				<DateSet/>
+				<TalkbackOn>true</TalkbackOn>
+			</TalkbackStatus>
+			<UserID>18431779550764.151162644807776</UserID>
+			<UserName>alexa</UserName>
+		</QuartusUser>
+	</QuartusExecution>
+	<SchemaVersion>schema_2013-01-18</SchemaVersion>
+</ProgramExecution>
+

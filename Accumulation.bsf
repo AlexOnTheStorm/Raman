@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2013 Altera Corporation
+Copyright (C) 1991-2014 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 280 160)
+	(rect 16 16 280 192)
 	(text "Accumulation" (rect 5 0 59 12)(font "Arial" ))
-	(text "inst" (rect 8 128 20 140)(font "Arial" ))
+	(text "inst" (rect 8 160 20 172)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -33,57 +33,81 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "rdreq" (rect 0 0 21 12)(font "Arial" ))
-		(text "rdreq" (rect 21 43 42 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
+		(text "q[11..0]" (rect 0 0 27 12)(font "Arial" ))
+		(text "q[11..0]" (rect 21 43 48 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "q[11..0]" (rect 0 0 27 12)(font "Arial" ))
-		(text "q[11..0]" (rect 21 59 48 71)(font "Arial" ))
+		(text "qmem[28..0]" (rect 0 0 50 12)(font "Arial" ))
+		(text "qmem[28..0]" (rect 21 59 71 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "cnt_point[10..0]" (rect 0 0 59 12)(font "Arial" ))
-		(text "cnt_point[10..0]" (rect 21 75 80 87)(font "Arial" ))
+		(text "POINTS[10..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "POINTS[10..0]" (rect 21 75 78 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
 		(pt 0 96)
 		(input)
-		(text "cnt_measure[16..0]" (rect 0 0 76 12)(font "Arial" ))
-		(text "cnt_measure[16..0]" (rect 21 91 97 103)(font "Arial" ))
+		(text "MEASURES[16..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "MEASURES[16..0]" (rect 21 91 102 103)(font "Arial" ))
 		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "cnt_point[10..0]" (rect 0 0 59 12)(font "Arial" ))
+		(text "cnt_point[10..0]" (rect 21 107 80 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "cnt_measure[16..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "cnt_measure[16..0]" (rect 21 123 97 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "rdreq" (rect 0 0 21 12)(font "Arial" ))
+		(text "rdreq" (rect 21 139 42 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
 	)
 	(port
 		(pt 264 32)
 		(output)
-		(text "sum[29*POINTS-1..0]" (rect 0 0 82 12)(font "Arial" ))
-		(text "sum[29*POINTS-1..0]" (rect 161 27 243 39)(font "Arial" ))
+		(text "datamem[28..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "datamem[28..0]" (rect 181 27 243 39)(font "Arial" ))
 		(line (pt 264 32)(pt 248 32)(line_width 3))
 	)
 	(port
 		(pt 264 48)
 		(output)
-		(text "presum[14..0]" (rect 0 0 55 12)(font "Arial" ))
-		(text "presum[14..0]" (rect 188 43 243 55)(font "Arial" ))
-		(line (pt 264 48)(pt 248 48)(line_width 3))
+		(text "aclr" (rect 0 0 14 12)(font "Arial" ))
+		(text "aclr" (rect 229 43 243 55)(font "Arial" ))
+		(line (pt 264 48)(pt 248 48)(line_width 1))
 	)
-	(parameter
-		"POINTS"
-		"10"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"MEASURES"
-		"100"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
+	(port
+		(pt 264 64)
+		(output)
+		(text "cnt_point_read[10..0]" (rect 0 0 82 12)(font "Arial" ))
+		(text "cnt_point_read[10..0]" (rect 161 59 243 71)(font "Arial" ))
+		(line (pt 264 64)(pt 248 64)(line_width 3))
+	)
+	(port
+		(pt 264 80)
+		(output)
+		(text "wren" (rect 0 0 18 12)(font "Arial" ))
+		(text "wren" (rect 225 75 243 87)(font "Arial" ))
+		(line (pt 264 80)(pt 248 80)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 248 128)(line_width 1))
+		(rectangle (rect 16 16 248 160)(line_width 1))
 	)
-	(annotation_block (parameter)(rect 280 -64 380 16))
 )
